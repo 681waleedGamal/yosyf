@@ -478,17 +478,105 @@
                     </div>
                 </div>
                 
-                <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1573246123716-6b1782bfc499?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')"></div>
-                    <div class="service-content">
-                        <h3>تأجير جلسات شعبية</h3>
-                        <p>جلسات عربية أصيلة بتصميمات تراثية وأنيقة تعكس روح الأصالة والتراث في مناسبتك. جلسات عربية، وسائد تقليدية، وديكورات تراثية.</p>
-                        <div class="service-contact">
-                            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الجلسات الشعبية"><i class="fab fa-whatsapp"></i> واتساب</a>
-                            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
-                        </div>
-                    </div>
-                </div>
+              <div class="service-card">
+    <div class="service-gallery">
+        <div class="gallery-img active" style="background-image: url('https://i.postimg.cc/SK2q9sX8/994e7dee-f3cd-4ef3-a9ac-b04525aa07c3.jpg')"></div>
+        <div class="gallery-img" style="background-image: url('https://i.postimg.cc/65WX0z2B/4c80b033-3ab9-44d1-938e-cd0632fc9125.jpg')"></div>
+        <div class="gallery-img" style="background-image: url('https://i.postimg.cc/vHHJ9BkB/a8e7c83f-73f5-4110-a2b0-de0a00eee2aa.jpg')"></div>
+        <div class="gallery-nav">
+            <button class="gallery-prev"><i class="fas fa-chevron-right"></i></button>
+            <button class="gallery-next"><i class="fas fa-chevron-left"></i></button>
+        </div>
+    </div>
+    <div class="service-content">
+        <h3>تأجير جلسات شعبية</h3>
+        <p>جلسات عربية أصيلة بتصميمات تراثية وأنيقة تعكس روح الأصالة والتراث في مناسبتك. جلسات عربية، وسائد تقليدية، وديكورات تراثية.</p>
+        <div class="service-contact">
+            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الجلسات الشعبية"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
+        </div>
+    </div>
+</div>
+
+<style>
+.service-gallery {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.gallery-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-img.active {
+    opacity: 1;
+}
+
+.gallery-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-nav button {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-nav button:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryImages = document.querySelectorAll('.gallery-img');
+    const prevButton = document.querySelector('.gallery-prev');
+    const nextButton = document.querySelector('.gallery-next');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        galleryImages.forEach(img => img.classList.remove('active'));
+        galleryImages[index].classList.add('active');
+    }
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+        showImage(currentIndex);
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % galleryImages.length;
+        showImage(currentIndex);
+    });
+
+    // التبديل التلقائي بين الصور كل 5 ثواني
+    setInterval(function() {
+        currentIndex = (currentIndex + 1) % galleryImages.length;
+        showImage(currentIndex);
+    }, 5000);
+});
+</script>
                 
                 <div class="service-card">
                     <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1519735777090-ec97162dc266?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80')"></div>
