@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تأجير جلسات تأجير كراسي وطاولات تأجير مكيفات ولوازم حفلات مناسبات في الدمام والخبر والشرقية</title>
+    <meta name="description" content= تأجير كنب، تأجير طاولات، تأجير كراسي، تأجير جلسات شعبية، تأجير أجهزة صوت وإضاءة، تأجير مكيفات ودفايات لجميع المناسبات في منطقة الشرقية">
+    <meta name="keywords" content="تأجير كنب, تأجير طاولات, تأجير كراسي, تأجير سماعات, تأجير مكيفات, تأجير دفعيات, تأجير جلسات شعبية, تأجير إضاءة, تأجير ليزرات, مناسبات الدمام, مناسبات الخبر, تأجير معدات الشرقية">
+    <style>
+        :root {
+            --primary-color: #1a5f7a;
+            --secondary-color: #f8f1f1;
+            --accent-color: #ffc107;
+            --text-color: #333;
+            --light-text: #777;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* التصميم العام */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .logo a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* الهيرو */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1200x600/1a5f7a/white?text=تأجير+معدات+المناسبات') no-repeat center center/cover;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--text-color);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #e0a800;
+        }
+        
+        /* الأقسام */
+        section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: var(--accent-color);
+            margin: 0.5rem auto;
+        }
+        
+        /* خدماتنا */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-img {
+            height: 200px;
+            background-color: #ddd;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .service-content {
+            padding: 1.5rem;
+        }
+        
+        .service-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* المدن */
+        .cities {
+            background-color: var(--secondary-color);
+        }
+        
+        .cities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+        
+        .city-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* الأسئلة الشائعة */
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            background: var(--primary-color);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 1.5rem;
+            display: none;
+        }
+        
+        .faq-answer.active {
+            display: block;
+        }
+        
+        /* الفوتر */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: var(--accent-color);
+            margin-top: 0.5rem;
+        }
+        
+        .footer-section p, .footer-section a {
+            color: #ddd;
+            margin-bottom: 0.5rem;
+            display: block;
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            color: var(--accent-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* responsiveness */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- الهيدر -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#">دليل أركم</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#cities">المدن</a></li>
+                    <li><a href="#faq">الأسئلة الشائعة</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- قسم الهيرو -->
+    <section class="hero">
+        <div class="container">
+            <h1>خدمات تأجير متكاملة لجميع المناسبات في المنطقة الشرقية</h1>
+            <p>نوفر لك كل ما تحتاجه لمناسبتك من كنب، طاولات، كراسي، جلسات شعبية، أجهزة صوت وإضاءة، مكيفات ودفايات بتقنيات عالية وأسعار مناسبة</p>
+            <a href="#contact" class="btn">اطلب خدمتك الآن</a>
+        </div>
+    </section>
+
+    <!-- خدماتنا -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+كنب')"></div>
+                    <div class="service-content">
+                        <h3>تأجير كنب</h3>
+                        <p>كنب فاخر ومريح بأسعار مناسبة لجميع المناسبات، متوفر بألوان وتصاميم متنوعة تناسب ذوقك.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+طاولات')"></div>
+                    <div class="service-content">
+                        <h3>تأجير طاولات</h3>
+                        <p>طاولات بتصاميم عصرية وتقليدية بمقاسات مختلفة تناسب جميع أنواع المناسبات والاحتياجات.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+كراسي')"></div>
+                    <div class="service-content">
+                        <h3>تأجير كراسي</h3>
+                        <p>كراسي مريحة وعملية بمختلف الأنواع والأشكال، كراسي طعام، كراسي حدائق، وكراسي للجلسات.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+سماعات')"></div>
+                    <div class="service-content">
+                        <h3>تأجير سماعات</h3>
+                        <p>أنظمة صوتية متكاملة بجودة عالية تناسب جميع أنواع المناسبات من حفلات وأفراح ومؤتمرات.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+مكيفات')"></div>
+                    <div class="service-content">
+                        <h3>تأجير مكيفات ودفايات</h3>
+                        <p>حلول تكييف وتدفئة مبتكرة للمناسبات في الأماكن المفتوحة والمغلقة بجميع الأحجام.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+جلسات+شعبية')"></div>
+                    <div class="service-content">
+                        <h3>تأجير جلسات شعبية</h3>
+                        <p>جلسات عربية أصيلة بتصميمات تراثية وأنيقة تعكس روح الأصالة والتراث في مناسبتك.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+إضاءة')"></div>
+                    <div class="service-content">
+                        <h3>تأجير عقود إضاءة</h3>
+                        <p>أنظمة إضاءة مبتكرة ومذهلة تضفي جواً من البهجة والأناقة على مناسبتك بألوان متعددة.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+ليزرات')"></div>
+                    <div class="service-content">
+                        <h3>تأجير ليزرات</h3>
+                        <p>عروض ليزرية مبهرة تضيف لمسة سحرية وجذابة على حفلاتك ومناسباتك الخاصة والعامة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- المدن -->
+    <section id="cities" class="cities">
+        <div class="container">
+            <h2 class="section-title">خدماتنا متاحة في جميع مدن المنطقة الشرقية</h2>
+            <div class="cities-grid">
+                <div class="city-card">
+                    <h3>الدمام</h3>
+                    <p>تأجير معدات مناسبات في الدمام</p>
+                </div>
+                <div class="city-card">
+                    <h3>الخبر</h3>
+                    <p>تأجير معدات مناسبات في الخبر</p>
+                </div>
+                <div class="city-card">
+                    <h3>القطيف</h3>
+                    <p>تأجير معدات مناسبات في القطيف</p>
+                </div>
+                <div class="city-card">
+                    <h3>الجبيل</h3>
+                    <p>تأجير معدات مناسبات في الجبيل</p>
+                </div>
+                <div class="city-card">
+                    <h3>الأحساء</h3>
+                    <p>تأجير معدات مناسبات في الأحساء</p>
+                </div>
+                <div class="city-card">
+                    <h3>بقيق</h3>
+                    <p>تأجير معدات مناسبات في بقيق</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأسئلة الشائعة -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">الأسئلة الشائعة</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>ما هي مدة التأجير المتاحة؟</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نقدم فترات تأجير مرنة تبدأ من يوم واحد وتصل إلى عدة أشهر حسب احتياجاتك. يمكنك اختيار المدة المناسبة لمناسبتك مع إمكانية التمديد إذا لزم الأمر.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>هل تتضمن الخدمة التوصيل والتركيب؟</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، جميع خدماتنا تتضمن التوصيل والتركيب في الموقع بالإضافة إلى التفكيك بعد انتهاء فترة التأجير. فريقنا الفني المحترف سيتولى كل هذه المهمة بدقة واحترافية.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>كيف يمكنني حجز الخدمة؟</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمكنك حجز الخدمة عبر الاتصال بنا مباشرة، أو عبر نموذج الاتصال على موقعنا، أو عبر وسائل التواصل الاجتماعي. ننصح بالحجز المسبق خاصة في مواسم المناسبات.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>ما هي وسائل الدفع المتاحة؟</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نقبل الدفع نقداً، التحويل البنكي، والدفع بالبطاقات الإئتمانية. كما نوفر خيار دفع جزء من المبلغ كعربون والباقي عند التسليم.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>هل تقدمون خصومات للكميات أو للعملاء الدائمين؟</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نوفر خصومات خاصة للكميات الكبيرة وللأعراس والمناسبات الكبيرة، كما أن لدينا برنامج ولاء للعملاء الدائمين يمنحهم أفضل العروض والخصومات.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- اتصل بنا -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <p>نحن هنا لخدمتك في جميع مدن المنطقة الشرقية</p>
+                <p>اتصل بنا الآن للحصول على استشارة مجانية أو لحجز خدماتنا</p>
+            </div>
+            <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); max-width: 600px; margin: 0 auto;">
+                <form>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem;">الاسم</label>
+                        <input type="text" id="name" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="phone" style="display: block; margin-bottom: 0.5rem;">رقم الجوال</label>
+                        <input type="tel" id="phone" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="city" style="display: block; margin-bottom: 0.5rem;">المدينة</label>
+                        <select id="city" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                            <option value="">اختر المدينة</option>
+                            <option value="damam">الدمام</option>
+                            <option value="khobar">الخبر</option>
+                            <option value="qatif">القطيف</option>
+                            <option value="jubail">الجبيل</option>
+                            <option value="ahsa">الأحساء</option>
+                            <option value="baqeeq">بقيق</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="service" style="display: block; margin-bottom: 0.5rem;">نوع الخدمة</label>
+                        <select id="service" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                            <option value="">اختر الخدمة</option>
+                            <option value="sofa">تأجير كنب</option>
+                            <option value="tables">تأجير طاولات</option>
+                            <option value="chairs">تأجير كراسي</option>
+                            <option value="sound">تأجير سماعات</option>
+                            <option value="ac">تأجير مكيفات ودفايات</option>
+                            <option value="seating">تأجير جلسات شعبية</option>
+                            <option value="lighting">تأجير إضاءة</option>
+                            <option value="laser">تأجير ليزرات</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="message" style="display: block; margin-bottom: 0.5rem;">الرسالة</label>
+                        <textarea id="message" rows="4" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                    </div>
+                    <button type="submit" style="background: var(--primary-color); color: white; padding: 1rem 2rem; border: none; border-radius: 4px; cursor: pointer; width: 100%;">إرسال الطلب</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن فن الشرقية</h3>
+                    <p>نحن رواد في مجال تأجير معدات المناسبات في المنطقة الشرقية، نقدم خدمات متنوعة وبجودة عالية لجميع أنواع المناسبات منذ عام 2010.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <a href="#services">خدماتنا</a>
+                    <a href="#cities">المدن</a>
+                    <a href="#faq">الأسئلة الشائعة</a>
+                    <a href="#contact">اتصل بنا</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>وسائل التواصل</h3>
+                    <p>الهاتف: 0551234567</p>
+                    <p>جميع مدن المنطقة الشرقية</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة © دليل أركم 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('active');
+                
+                const icon = question.querySelector('span:last-child');
+                icon.textContent = icon.textContent === '+' ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>
