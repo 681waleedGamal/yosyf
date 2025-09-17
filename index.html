@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تأجير جلسات تأجير كراسي وطاولات تأجير مكيفات ولوازم حفلات مناسبات في الدمام والخبر والشرقية</title>
-    <meta name="description" content= تأجير كنب، تأجير طاولات، تأجير كراسي، تأجير جلسات شعبية، تأجير أجهزة صوت وإضاءة، تأجير مكيفات ودفايات لجميع المناسبات في منطقة الشرقية">
-    <meta name="keywords" content="تأجير كنب, تأجير طاولات, تأجير كراسي, تأجير سماعات, تأجير مكيفات, تأجير دفعيات, تأجير جلسات شعبية, تأجير إضاءة, تأجير ليزرات, مناسبات الدمام, مناسبات الخبر, تأجير معدات الشرقية">
+    <title>مؤسسة البياض - تأجير كراسي، طاولات، كنب ومستلزمات المناسبات</title>
+    <meta name="description" content="تأجير كراسي، طاولات، كنب، جلسات شعبية، أجهزة صوت وإضاءة، مكيفات ومستلزمات المناسبات بأفضل جودة وأقل الأسعار">
+    <meta name="keywords" content="تأجير كراسي, تأجير طاولات, تأجير كنب, تأجير مستلزمات حفلات, تأجير مناسبات, كراسي مناسبات, طاولات مناسبات, كنب مناسبات, تأجير أجهزة صوت, تأجير إضاءة, تأجير مكيفات, تأجير جلسات شعبية, تأجير ليزرات, تأجير دفايات">
+    
+    <!-- روابط الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- رابط أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         :root {
             --primary-color: #1a5f7a;
@@ -73,6 +82,7 @@
             color: white;
             text-decoration: none;
             transition: color 0.3s;
+            font-weight: 600;
         }
         
         nav ul li a:hover {
@@ -81,7 +91,7 @@
         
         /* الهيرو */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1200x600/1a5f7a/white?text=تأجير+معدات+المناسبات') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80') no-repeat center center/cover;
             color: white;
             padding: 5rem 0;
             text-align: center;
@@ -107,10 +117,20 @@
             border-radius: 5px;
             font-weight: bold;
             transition: background 0.3s;
+            margin: 0 5px;
         }
         
         .btn:hover {
             background: #e0a800;
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #128C7E;
         }
         
         /* الأقسام */
@@ -137,7 +157,7 @@
         /* خدماتنا */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
         
@@ -147,6 +167,7 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
+            position: relative;
         }
         
         .service-card:hover {
@@ -167,6 +188,29 @@
         .service-content h3 {
             color: var(--primary-color);
             margin-bottom: 0.5rem;
+        }
+        
+        .service-content p {
+            color: var(--light-text);
+            margin-bottom: 1rem;
+        }
+        
+        .service-contact {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+        
+        .service-contact a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .service-contact a i {
+            margin-left: 5px;
         }
         
         /* المدن */
@@ -216,6 +260,31 @@
             display: block;
         }
         
+        /* لماذا نحن */
+        .features {
+            background-color: var(--secondary-color);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
         /* الفوتر */
         footer {
             background: var(--primary-color);
@@ -255,6 +324,27 @@
             color: var(--accent-color);
         }
         
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent-color);
+        }
+        
         .copyright {
             text-align: center;
             padding-top: 1rem;
@@ -284,6 +374,11 @@
             .hero p {
                 font-size: 1rem;
             }
+            
+            .service-contact {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
     </style>
 </head>
@@ -292,14 +387,15 @@
     <header>
         <div class="container header-content">
             <div class="logo">
-                <a href="#">دليل أركم</a>
+                <a href="#">مؤسسة البياض</a>
             </div>
             <nav>
                 <ul>
                     <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#about">من نحن</a></li>
                     <li><a href="#cities">المدن</a></li>
                     <li><a href="#faq">الأسئلة الشائعة</a></li>
-                    <li><a href="#contact">اتصل بنا</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
                 </ul>
             </nav>
         </div>
@@ -308,9 +404,12 @@
     <!-- قسم الهيرو -->
     <section class="hero">
         <div class="container">
-            <h1>خدمات تأجير متكاملة لجميع المناسبات في المنطقة الشرقية</h1>
-            <p>نوفر لك كل ما تحتاجه لمناسبتك من كنب، طاولات، كراسي، جلسات شعبية، أجهزة صوت وإضاءة، مكيفات ودفايات بتقنيات عالية وأسعار مناسبة</p>
-            <a href="#contact" class="btn">اطلب خدمتك الآن</a>
+            <h1>تأجير كراسي وطاولات تأجير كنب تأجير جلسات ومستلزمات المناسبات</h1>
+            <p>تأجير مستلزمات الحفلات والمناسبات بأفضل جودة وأقل الأسعار في المنطقة الشرقية</p>
+            <div>
+                <a href="https://wa.me/966501012166" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> تواصل عبر واتساب</a>
+                <a href="tel:0501012166" class="btn"><i class="fas fa-phone"></i> اتصل بنا الآن</a>
+            </div>
         </div>
     </section>
 
@@ -320,67 +419,133 @@
             <h2 class="section-title">خدماتنا</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+كنب')"></div>
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80')"></div>
+                    <div class="service-content">
+                        <h3>تأجير كراسي وطاولات</h3>
+                        <p>كراسي مريحة وعملية بمختلف الأنواع والأشكال، كراسي وطاولات، كراسي ملكي، وكراسي للجلسات. متوفرة بألوان متعددة وتصاميم عصرية تناسب جميع أنواع المناسبات.</p>
+                        <div class="service-contact">
+                            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الكراسي"><i class="fab fa-whatsapp"></i> واتساب</a>
+                            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')"></div>
+                    <div class="service-content">
+                        <h3>تأجير طاولات للمناسبات</h3>
+                        <p>طاولات بتصاميم عصرية وتقليدية بمقاسات مختلفة تناسب جميع أنواع المناسبات والاحتياجات. طاولات طعام، طاولات عرض، طاولات مستديرة ومربعة.</p>
+                        <div class="service-contact">
+                            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الطاولات"><i class="fab fa-whatsapp"></i> واتساب</a>
+                            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')"></div>
                     <div class="service-content">
                         <h3>تأجير كنب</h3>
-                        <p>كنب فاخر ومريح بأسعار مناسبة لجميع المناسبات، متوفر بألوان وتصاميم متنوعة تناسب ذوقك.</p>
+                        <p>كنب فاخر ومريح بأسعار مناسبة لجميع المناسبات، متوفر بألوان وتصاميم متنوعة تناسب ذوقك. كنب حديث، كلاسيكي، وقطع استرخاء متعددة.</p>
+                        <div class="service-contact">
+                            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الكنب"><i class="fab fa-whatsapp"></i> واتساب</a>
+                            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+طاولات')"></div>
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1509750317457-2cbf3f3f2447?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80')"></div>
                     <div class="service-content">
-                        <h3>تأجير طاولات</h3>
-                        <p>طاولات بتصاميم عصرية وتقليدية بمقاسات مختلفة تناسب جميع أنواع المناسبات والاحتياجات.</p>
+                        <h3>تأجير سماعات ومكبرات صوت</h3>
+                        <p>أنظمة صوتية متكاملة بجودة عالية تناسب جميع أنواع المناسبات من حفلات وأفراح ومؤتمرات. ميكروفونات، مكبرات صوت، ومعدات DJ احترافية.</p>
+                        <div class="service-contact">
+                            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير السماعات"><i class="fab fa-whatsapp"></i> واتساب</a>
+                            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+كراسي')"></div>
-                    <div class="service-content">
-                        <h3>تأجير كراسي</h3>
-                        <p>كراسي مريحة وعملية بمختلف الأنواع والأشكال، كراسي طعام، كراسي حدائق، وكراسي للجلسات.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+سماعات')"></div>
-                    <div class="service-content">
-                        <h3>تأجير سماعات</h3>
-                        <p>أنظمة صوتية متكاملة بجودة عالية تناسب جميع أنواع المناسبات من حفلات وأفراح ومؤتمرات.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+مكيفات')"></div>
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')"></div>
                     <div class="service-content">
                         <h3>تأجير مكيفات ودفايات</h3>
-                        <p>حلول تكييف وتدفئة مبتكرة للمناسبات في الأماكن المفتوحة والمغلقة بجميع الأحجام.</p>
+                        <p>حلول تكييف وتدفئة مبتكرة للمناسبات في الأماكن المفتوحة والمغلقة بجميع الأحجام. مكيفات سبليت، مكيفات مركزية، ودفايات خارجية.</p>
+                        <div class="service-contact">
+                            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير المكيفات"><i class="fab fa-whatsapp"></i> واتساب</a>
+                            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+جلسات+شعبية')"></div>
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1573246123716-6b1782bfc499?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')"></div>
                     <div class="service-content">
                         <h3>تأجير جلسات شعبية</h3>
-                        <p>جلسات عربية أصيلة بتصميمات تراثية وأنيقة تعكس روح الأصالة والتراث في مناسبتك.</p>
+                        <p>جلسات عربية أصيلة بتصميمات تراثية وأنيقة تعكس روح الأصالة والتراث في مناسبتك. جلسات عربية، وسائد تقليدية، وديكورات تراثية.</p>
+                        <div class="service-contact">
+                            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الجلسات الشعبية"><i class="fab fa-whatsapp"></i> واتساب</a>
+                            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+إضاءة')"></div>
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1519735777090-ec97162dc266?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80')"></div>
                     <div class="service-content">
-                        <h3>تأجير عقود إضاءة</h3>
-                        <p>أنظمة إضاءة مبتكرة ومذهلة تضفي جواً من البهجة والأناقة على مناسبتك بألوان متعددة.</p>
+                        <h3>تأجير عقود إضائة</h3>
+                        <p>أنظمة إضاءة مبتكرة ومذهلة تضفي جواً من البهجة والأناقة على مناسبتك بألوان متعددة. إضاءة LED  إضاءة ذكية، وعقود لمبات وإضاءة ديكورية.</p>
+                        <div class="service-contact">
+                            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الإضاءة"><i class="fab fa-whatsapp"></i> واتساب</a>
+                            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://placehold.co/300x200/1a5f7a/white?text=تأجير+ليزرات')"></div>
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')"></div>
                     <div class="service-content">
                         <h3>تأجير ليزرات</h3>
-                        <p>عروض ليزرية مبهرة تضيف لمسة سحرية وجذابة على حفلاتك ومناسباتك الخاصة والعامة.</p>
+                        <p>عروض ليزرية مبهرة تضيف لمسة سحرية وجذابة على حفلاتك ومناسباتك الخاصة والعامة. عروض ضوئية، مؤثرات خاصة، وديكورات تفاعلية.</p>
+                        <div class="service-contact">
+                            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الليزرات"><i class="fab fa-whatsapp"></i> واتساب</a>
+                            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- من نحن -->
+    <section id="about" class="features">
+        <div class="container">
+            <h2 class="section-title">من نحن</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">مؤسسة البياض هي الوجهة الأولى في المنطقة الشرقية لتأجير مستلزمات الحفلات والمناسبات. نحن نقدم حلولاً متكاملة تجمع بين الجودة العالية والأسعار التنافسية والخدمة المتميزة.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>جودة عالية</h3>
+                    <p>نوفر منتجات عالية الجودة وحديثة يتم صيانتها دورياً لضمان رضاكم</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-tags"></i>
+                    <h3>أسعار مناسبة</h3>
+                    <p>نقدم أسعاراً تنافسية تناسب جميع الفئات مع خيارات دفع مرنة</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>توصيل سريع</h3>
+                    <p>خدمة توصيل سريعة لجميع مدن المنطقة الشرقية في الوقت المحدد</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>دعم فني</h3>
+                    <p>فريق دعم فني متاح على مدار الساعة لمساعدتكم في جميع استفساراتكم</p>
                 </div>
             </div>
         </div>
@@ -409,7 +574,7 @@
                 </div>
                 <div class="city-card">
                     <h3>الأحساء</h3>
-                    <p>تأجير معدات مناسبات في الأحساء</p>
+                    <p>تأجير معدats مناسبات في الأحساء</p>
                 </div>
                 <div class="city-card">
                     <h3>بقيق</h3>
@@ -430,7 +595,7 @@
                         <span>+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>نقدم فترات تأجير مرنة تبدأ من يوم واحد وتصل إلى عدة أشهر حسب احتياجاتك. يمكنك اختيار المدة المناسبة لمناسبتك مع إمكانية التمديد إذا لزم الأمر.</p>
+                        <p>نقدم فترات تأجير مرنة تبدأ من يوم واحد وتصل إلى عدة أشهر حسب احتياجاتك. يمكنك اختيار المدة المناسبة لمناسبتك مع إمكانية التمديد إذا لزم الأمر. نحن نتفهم أن كل مناسبة لها متطلباتها الخاصة، لذلك نحن نعمل على توفير حلول تأجير تلائم جميع المدد والاحتياجات.</p>
                     </div>
                 </div>
                 
@@ -440,7 +605,7 @@
                         <span>+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>نعم، جميع خدماتنا تتضمن التوصيل والتركيب في الموقع بالإضافة إلى التفكيك بعد انتهاء فترة التأجير. فريقنا الفني المحترف سيتولى كل هذه المهمة بدقة واحترافية.</p>
+                        <p>نعم، جميع خدماتنا تتضمن التوصيل والتركيب في الموقع بالإضافة إلى التفكيك بعد انتهاء فترة التأجير. فريقنا الفني المحترف سيتولى كل هذه المهمة بدقة واحترافية. نحن نضمن وصول المنتجات في الوقت المحدد وتركيبها بشكل متقن لضمان نجاح مناسبتك.</p>
                     </div>
                 </div>
                 
@@ -450,7 +615,7 @@
                         <span>+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>يمكنك حجز الخدمة عبر الاتصال بنا مباشرة، أو عبر نموذج الاتصال على موقعنا، أو عبر وسائل التواصل الاجتماعي. ننصح بالحجز المسبق خاصة في مواسم المناسبات.</p>
+                        <p>يمكنك حجز الخدمة عبر الاتصال بنا مباشرة على الرقم 0501012166، أو عبر الواتساب على نفس الرقم، أو عبر وسائل التواصل الاجتماعي. ننصح بالحجز المسبق خاصة في مواسم المناسبات لضمان توفر المنتجات في التاريخ المطلوب.</p>
                     </div>
                 </div>
                 
@@ -460,7 +625,7 @@
                         <span>+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>نقبل الدفع نقداً، التحويل البنكي، والدفع بالبطاقات الإئتمانية. كما نوفر خيار دفع جزء من المبلغ كعربون والباقي عند التسليم.</p>
+                        <p>نقبل الدفع نقداً، التحويل البنكي، كما نوفر خيار دفع جزء من المبلغ كعربون والباقي عند التسليم. نحن نهدف إلى توفير مرونة في الدفع لتسهيل التعامل معنا.</p>
                     </div>
                 </div>
                 
@@ -470,7 +635,7 @@
                         <span>+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>نعم، نوفر خصومات خاصة للكميات الكبيرة وللأعراس والمناسبات الكبيرة، كما أن لدينا برنامج ولاء للعملاء الدائمين يمنحهم أفضل العروض والخصومات.</p>
+                        <p>نعم، نوفر خصومات خاصة للكميات الكبيرة وللأعراس والمناسبات الكبيرة، كما أن لدينا برنامج ولاء للعملاء الدائمين يمنحهم أفضل العروض والخصومات. اتصل بنا لمعرفة التفاصيل والعروض الخاصة المتاحة لمناسبتك.</p>
                     </div>
                 </div>
             </div>
@@ -478,55 +643,58 @@
     </section>
 
     <!-- اتصل بنا -->
-    <section id="contact">
+    <section id="contact" class="features">
         <div class="container">
-            <h2 class="section-title">اتصل بنا</h2>
+            <h2 class="section-title">تواصل معنا</h2>
             <div style="text-align: center; margin-bottom: 2rem;">
                 <p>نحن هنا لخدمتك في جميع مدن المنطقة الشرقية</p>
                 <p>اتصل بنا الآن للحصول على استشارة مجانية أو لحجز خدماتنا</p>
             </div>
-            <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); max-width: 600px; margin: 0 auto;">
-                <form>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); flex: 1; min-width: 300px;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem; text-align: center;">معلومات التواصل</h3>
                     <div style="margin-bottom: 1rem;">
-                        <label for="name" style="display: block; margin-bottom: 0.5rem;">الاسم</label>
-                        <input type="text" id="name" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                        <p><i class="fas fa-phone" style="color: var(--primary-color); margin-left: 10px;"></i> <strong>الهاتف:</strong> 0501012166</p>
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="phone" style="display: block; margin-bottom: 0.5rem;">رقم الجوال</label>
-                        <input type="tel" id="phone" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                        <p><i class="fab fa-whatsapp" style="color: #25D366; margin-left: 10px;"></i> <strong>الواتساب:</strong> 0501012166</p>
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="city" style="display: block; margin-bottom: 0.5rem;">المدينة</label>
-                        <select id="city" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
-                            <option value="">اختر المدينة</option>
-                            <option value="damam">الدمام</option>
-                            <option value="khobar">الخبر</option>
-                            <option value="qatif">القطيف</option>
-                            <option value="jubail">الجبيل</option>
-                            <option value="ahsa">الأحساء</option>
-                            <option value="baqeeq">بقيق</option>
-                        </select>
+                        <p><i class="fas fa-envelope" style="color: var(--primary-color); margin-left: 10px;"></i> <strong>الإيميل:</strong> info@alabyadh.store</p>
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="service" style="display: block; margin-bottom: 0.5rem;">نوع الخدمة</label>
-                        <select id="service" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
-                            <option value="">اختر الخدمة</option>
-                            <option value="sofa">تأجير كنب</option>
-                            <option value="tables">تأجير طاولات</option>
-                            <option value="chairs">تأجير كراسي</option>
-                            <option value="sound">تأجير سماعات</option>
-                            <option value="ac">تأجير مكيفات ودفايات</option>
-                            <option value="seating">تأجير جلسات شعبية</option>
-                            <option value="lighting">تأجير إضاءة</option>
-                            <option value="laser">تأجير ليزرات</option>
-                        </select>
+                        <p><i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-left: 10px;"></i> <strong>الموقع:</strong> المنطقة الشرقية - السعودية</p>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="https://wa.me/966501012166" class="btn btn-whatsapp" style="margin-bottom: 10px;"><i class="fab fa-whatsapp"></i> تواصل عبر واتساب</a>
+                        <a href="tel:0501012166" class="btn"><i class="fas fa-phone"></i> اتصل بنا الآن</a>
+                    </div>
+                </div>
+                
+                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); flex: 1; min-width: 300px;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem; text-align: center;">أوقات العمل</h3>
+                    <div style="margin-bottom: 1rem;">
+                        <p><strong>السبت - الخميس:</strong> 8:00 صباحاً - 12:00 منتصف الليل</p>
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="message" style="display: block; margin-bottom: 0.5rem;">الرسالة</label>
-                        <textarea id="message" rows="4" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                        <p><strong>الجمعة:</strong> 4:00 عصراً - 12:00 منتصف الليل</p>
                     </div>
-                    <button type="submit" style="background: var(--primary-color); color: white; padding: 1rem 2rem; border: none; border-radius: 4px; cursor: pointer; width: 100%;">إرسال الطلب</button>
-                </form>
+                    <div style="margin-bottom: 1rem;">
+                        <p><strong>خدمة العملاء:</strong> متاحة 24/7 للطوارئ</p>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">تابعنا على</h3>
+                        <div class="social-links" style="justify-content: center;">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -536,7 +704,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>عن فن الشرقية</h3>
+                    <h3>عن مؤسسة فن الشرقية</h3>
                     <p>نحن رواد في مجال تأجير معدات المناسبات في المنطقة الشرقية، نقدم خدمات متنوعة وبجودة عالية لجميع أنواع المناسبات منذ عام 2010.</p>
                 </div>
                 
@@ -556,7 +724,7 @@
             </div>
             
             <div class="copyright">
-                <p>جميع الحقوق محفوظة © دليل أركم 2023</p>
+                <p>جميع الحقوق محفوظة © فن الشرقية 2023</p>
             </div>
         </div>
     </footer>
