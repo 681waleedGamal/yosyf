@@ -1,1123 +1,1325 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مؤسسة فن الشرقية - تأجير كراسي وطاولات، تأجير كنب تأجير مستلزمات المناسبات</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17865923579">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17865923579');
-</script>
-    <meta name="description" content="تأجير كراسي، طاولات، كنب، جلسات شعبية، أجهزة صوت وإضاءة، مكيفات ومستلزمات المناسبات بأفضل جودة وأقل الأسعار">
-    <meta name="keywords" content="تأجير كراسي, تأجير طاولات, تأجير كنب, تأجير مستلزمات حفلات, تأجير مناسبات, كراسي مناسبات, طاولات مناسبات, كنب مناسبات, تأجير أجهزة صوت, تأجير إضاءة, تأجير مكيفات, تأجير جلسات شعبية, تأجير ليزرات, تأجير دفايات">
-
-    <!-- روابط الخطوط -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- رابط أيقونات Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --primary-color: #1a5f7a;
-            --secondary-color: #f8f1f1;
-            --accent-color: #ffc107;
-            --text-color: #333;
-            --light-text: #777;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Cairo', sans-serif;
-        }
-        
-        body {
-            background-color: #f9f9f9;
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        /* التصميم العام */
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-        
-        .logo a {
-            color: white;
-            text-decoration: none;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 1.5rem;
-        }
-        
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-            font-weight: 600;
-        }
-        
-        nav ul li a:hover {
-            color: var(--accent-color);
-        }
-        
-        /* الهيرو */
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80') no-repeat center center/cover;
-            color: white;
-            padding: 5rem 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: var(--accent-color);
-            color: var(--text-color);
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-            margin: 0 5px;
-        }
-        
-        .btn:hover {
-            background: #e0a800;
-        }
-        
-        .btn-whatsapp {
-            background: #25D366;
-            color: white;
-        }
-        
-        .btn-whatsapp:hover {
-            background: #128C7E;
-        }
-        
-        /* الأقسام */
-        section {
-            padding: 4rem 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-            color: var(--primary-color);
-            position: relative;
-        }
-        
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 3px;
-            background: var(--accent-color);
-            margin: 0.5rem auto;
-        }
-        
-        /* خدماتنا */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-        
-        .service-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-            position: relative;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .service-img {
-            height: 200px;
-            background-color: #ddd;
-            background-position: center;
-            background-size: cover;
-        }
-        
-        .service-content {
-            padding: 1.5rem;
-        }
-        
-        .service-content h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-        
-        .service-content p {
-            color: var(--light-text);
-            margin-bottom: 1rem;
-        }
-        
-        .service-contact {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 1rem;
-        }
-        
-        .service-contact a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-        
-        .service-contact a i {
-            margin-left: 5px;
-        }
-        
-        /* المدن */
-        .cities {
-            background-color: var(--secondary-color);
-        }
-        
-        .cities-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            text-align: center;
-        }
-        
-        .city-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* الأسئلة الشائعة */
-        .faq-item {
-            background: white;
-            margin-bottom: 1rem;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        
-        .faq-question {
-            padding: 1.5rem;
-            background: var(--primary-color);
-            color: white;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .faq-answer {
-            padding: 1.5rem;
-            display: none;
-        }
-        
-        .faq-answer.active {
-            display: block;
-        }
-        
-        /* لماذا نحن */
-        .features {
-            background-color: var(--secondary-color);
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        
-        .feature-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .feature-card i {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        
-        /* الفوتر */
-        footer {
-            background: var(--primary-color);
-            color: white;
-            padding: 3rem 0 1rem;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-        
-        .footer-section h3 {
-            margin-bottom: 1rem;
-            position: relative;
-        }
-        
-        .footer-section h3::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 2px;
-            background: var(--accent-color);
-            margin-top: 0.5rem;
-        }
-        
-        .footer-section p, .footer-section a {
-            color: #ddd;
-            margin-bottom: 0.5rem;
-            display: block;
-            text-decoration: none;
-        }
-        
-        .footer-section a:hover {
-            color: var(--accent-color);
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            transition: background 0.3s;
-        }
-        
-        .social-links a:hover {
-            background: var(--accent-color);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        /* responsiveness */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-            }
-            
-            nav ul {
-                margin-top: 1rem;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            nav ul li {
-                margin: 0.5rem;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
-            
-            .service-contact {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حفلات الشرقية | تأجير لوازم حفلات ومناسبات الدمام والخبر والشرقية</title>
+ 
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="حفلات الشرقية - رقم 1 في تأجير لوازم الحفلات والمناسبات بالمنطقة الشرقية. تأجير كنب فاخر، جلسات شعبية، طاولات وكراسي، خيام، مكيفات، سماعات، قهوجيين بالدمام والخبر والجبيل. اتصل الآن 0537496082"/>
+  <meta name="keywords" content="تأجير كنب, كنب للايجار, تأجير جلسات شعبية, تأجير جلسات خارجية, تأجير قعدات خارجية, تأجير طاولات وكراسي, تأجير زوالي, تأجير سماعات, تأجير مكيفات, تأجير خيام, تأجير لوازم حفلات, حفلات الشرقية, مناسبات الدمام, تأجير مناسبات الخبر, قهوجيين وصبابين, تأجير كنب الدمام, كنب ايجار الشرقية, جلسات مغربية, جلسات ارضية, تأجير كراسي ملكي, تأجير طاولات شفاف, تأجير بيوت شعر, تأجير اثاث حفلات, تنسيق حفلات الشرقية, لوازم اعراس الدمام, تأجير كنب ثلاثي, تأجير كنب ملكي, كنب مجالس للايجار, جلسات للايجار, تأجير اثاث مناسبات"/>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+  <meta name="author" content="حفلات الشرقية"/>
+  <link rel="canonical" href="https://hafalaatsharqiyah.com"/>
+ 
+  <!-- Open Graph -->
+  <meta property="og:title" content="حفلات الشرقية | تأجير لوازم حفلات ومناسبات"/>
+  <meta property="og:description" content="تأجير كنب، جلسات شعبية، طاولات، كراسي، خيام، مكيفات، سماعات بالدمام والخبر والشرقية. اتصل 0537496082"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="ar_SA"/>
+  <meta property="og:image" content="https://i.postimg.cc/kGRqDB8H/Gemini-Generated-Image-nmkjt6nmkjt6nmkj.png"/>
+ 
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "حفلات الشرقية",
+    "image": "https://i.postimg.cc/kGRqDB8H/Gemini-Generated-Image-nmkjt6nmkjt6nmkj.png",
+    "description": "تأجير لوازم الحفلات والمناسبات في المنطقة الشرقية - كنب، جلسات شعبية، طاولات وكراسي، خيام، مكيفات، سماعات، قهوجيين",
+    "telephone": "+966537496082",
+    "url": "https://hafalaatsharqiyah.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "الدمام",
+      "addressRegion": "المنطقة الشرقية",
+      "addressCountry": "SA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 26.4207,
+      "longitude": 50.0888
+    },
+    "openingHours": "Mo-Su 00:00-24:00",
+    "priceRange": "$$",
+    "areaServed": ["الدمام", "الخبر", "الجبيل", "القطيف", "الظهران", "المنطقة الشرقية"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "خدمات تأجير لوازم الحفلات",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "تأجير كنب فاخر"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "تأجير جلسات شعبية وخارجية"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "تأجير طاولات وكراسي"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "تأجير خيام وبيوت شعر"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "تأجير مكيفات"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "تأجير سماعات ومكبرات صوت"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "قهوجيين وصبابين"}}
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "320"
+    }
+  }
+  </script>
+ 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+ 
+  <style>
+    :root {
+      --gold: #c9a84c;
+      --gold-light: #e8c96e;
+      --gold-dark: #9a7a2e;
+      --dark: #0a0a0a;
+      --dark2: #111111;
+      --dark3: #1a1a1a;
+      --dark4: #222222;
+      --text: #e8e8e8;
+      --text-muted: #aaaaaa;
+      --whatsapp: #25D366;
+      --phone: #007BFF;
+      --radius: 12px;
+      --shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+ 
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+ 
+    html { scroll-behavior: smooth; }
+ 
+    body {
+      font-family: 'Tajawal', 'Cairo', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+ 
+    /* ===== SCROLLBAR ===== */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--dark2); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+ 
+    /* ===== TOP BAR ===== */
+    .topbar {
+      background: var(--gold);
+      color: #000;
+      text-align: center;
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .topbar a { color: #000; text-decoration: none; font-weight: 900; }
+ 
+    /* ===== NAV ===== */
+    nav.main-nav {
+      background: var(--dark2);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+ 
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .nav-logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      object-fit: cover;
+    }
+    .nav-logo span {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--gold);
+      font-family: 'Cairo', sans-serif;
+    }
+ 
+    .nav-links {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 20px;
+      transition: all 0.3s;
+      border: 1px solid transparent;
+    }
+    .nav-links a:hover {
+      color: var(--gold);
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.08);
+    }
+ 
+    .nav-cta {
+      display: flex;
+      gap: 10px;
+    }
+    .nav-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .nav-cta a:hover { transform: scale(1.1); opacity: 0.9; }
+    .nav-cta .wa { background: var(--whatsapp); }
+    .nav-cta .ph { background: var(--phone); }
+ 
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(160deg, #0a0a0a 0%, #1a1208 40%, #0a0a0a 100%);
+      position: relative;
+      overflow: hidden;
+      padding: 80px 20px 100px;
+      text-align: center;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0; right: 0;
+      height: 60px;
+      background: linear-gradient(to bottom, transparent, var(--dark));
+      pointer-events: none;
+    }
+ 
+    /* Floating particles */
+    .particles { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    .particle {
+      position: absolute;
+      width: 2px; height: 2px;
+      background: var(--gold);
+      border-radius: 50%;
+      animation: float-up linear infinite;
+      opacity: 0;
+    }
+    @keyframes float-up {
+      0% { transform: translateY(100vh) scale(0); opacity: 0; }
+      10% { opacity: 0.6; }
+      90% { opacity: 0.3; }
+      100% { transform: translateY(-20vh) scale(1.5); opacity: 0; }
+    }
+ 
+    .hero-logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid var(--gold);
+      object-fit: cover;
+      margin: 0 auto 20px;
+      display: block;
+      box-shadow: 0 0 40px rgba(201,168,76,0.3);
+      animation: pulse-glow 3s ease-in-out infinite;
+    }
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 30px rgba(201,168,76,0.3); }
+      50% { box-shadow: 0 0 60px rgba(201,168,76,0.6); }
+    }
+ 
+    .hero-badge {
+      display: inline-block;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.4);
+      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 6px 18px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+ 
+    .hero h1 {
+      font-family: 'Cairo', sans-serif;
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.3;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+    .hero h1 .highlight {
+      color: var(--gold);
+      position: relative;
+    }
+ 
+    .hero p.sub {
+      font-size: clamp(15px, 2.5vw, 19px);
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 30px;
+      line-height: 1.7;
+    }
+ 
+    .hero-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 35px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-keywords span {
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.25);
+      color: var(--gold-light);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+ 
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .btn-wa {
+      background: var(--whatsapp);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.3);
+    }
+    .btn-wa:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(37,211,102,0.4); }
+    .btn-call {
+      background: transparent;
+      color: var(--gold);
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 2px solid var(--gold);
+      transition: all 0.3s;
+    }
+    .btn-call:hover { background: var(--gold); color: #000; transform: translateY(-2px); }
+ 
+    .hero-stats {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat .num {
+      font-family: 'Cairo', sans-serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--gold);
+      display: block;
+    }
+    .stat .label {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+ 
+    /* ===== SECTION HEADERS ===== */
+    .section-header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    .section-header .pre {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .section-header h2 {
+      font-family: 'Cairo', sans-serif;
+      font-size: clamp(22px, 4vw, 36px);
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      margin: 16px auto 0;
+      border-radius: 2px;
+    }
+ 
+    /* ===== SERVICES GRID ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+ 
+    .service-card {
+      background: var(--dark3);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: all 0.4s;
+      position: relative;
+    }
+    .service-card:hover {
+      border-color: rgba(201,168,76,0.45);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(201,168,76,0.1);
+    }
+ 
+    .service-card .card-img {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+    }
+    .service-card .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .service-card:hover .card-img img { transform: scale(1.05); }
+    .service-card .card-img .badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: var(--gold);
+      color: #000;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+ 
+    .service-card .card-body {
+      padding: 20px;
+    }
+    .service-card .card-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+    .service-card h3 {
+      font-family: 'Cairo', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+ 
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .service-tags span {
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.2);
+      color: var(--gold-light);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 10px;
+    }
+ 
+    .card-btns {
+      display: flex;
+      gap: 10px;
+    }
+    .card-btns a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      transition: all 0.3s;
+    }
+    .card-btns .cwa {
+      background: rgba(37,211,102,0.1);
+      border: 1px solid rgba(37,211,102,0.3);
+      color: var(--whatsapp);
+    }
+    .card-btns .cwa:hover { background: var(--whatsapp); color: white; }
+    .card-btns .cph {
+      background: rgba(0,123,255,0.1);
+      border: 1px solid rgba(0,123,255,0.3);
+      color: var(--phone);
+    }
+    .card-btns .cph:hover { background: var(--phone); color: white; }
+ 
+    /* ===== FEATURES STRIP ===== */
+    .features-strip {
+      background: var(--dark3);
+      border-top: 1px solid rgba(201,168,76,0.15);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      padding: 40px 20px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .feature-item .icon {
+      font-size: 32px;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .feature-item h4 {
+      font-size: 15px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .feature-item p {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+ 
+    /* ===== PRICING ===== */
+    .pricing-section {
+      padding: 0 20px 60px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .price-card {
+      background: var(--dark3);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .price-card:hover {
+      border-color: var(--gold);
+      background: var(--dark4);
+    }
+    .price-card .svc { font-size: 14px; color: var(--text-muted); margin-bottom: 8px; font-weight: 600; }
+    .price-card .price { font-family: 'Cairo', sans-serif; font-size: 22px; font-weight: 900; color: var(--gold); }
+    .price-card .unit { font-size: 11px; color: var(--text-muted); }
+ 
+    /* ===== FAQ ===== */
+    .faq-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+    .faq-item {
+      background: var(--dark3);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 18px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s;
+    }
+    .faq-q:hover { background: rgba(201,168,76,0.05); }
+    .faq-q .icon { color: var(--gold); font-size: 18px; transition: transform 0.3s; }
+    .faq-a {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s;
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-q { color: var(--gold); background: rgba(201,168,76,0.05); }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 20px 18px; }
+    .faq-item.open .faq-q .icon { transform: rotate(45deg); }
+ 
+    /* ===== AREAS ===== */
+    .areas-section {
+      background: var(--dark3);
+      padding: 50px 20px;
+      text-align: center;
+      border-top: 1px solid rgba(201,168,76,0.15);
+    }
+    .areas-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      max-width: 900px;
+      margin: 20px auto 0;
+    }
+    .area-tag {
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.3);
+      color: var(--gold-light);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: all 0.3s;
+    }
+    .area-tag:hover { background: var(--gold); color: #000; }
+ 
+    /* ===== ABOUT ===== */
+    .about-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+    .about-box {
+      background: var(--dark3);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: var(--radius);
+      padding: 36px;
+    }
+    .about-box p {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+    .about-box p:last-child { margin-bottom: 0; }
+    .about-box strong { color: var(--gold-light); }
+ 
+    /* ===== CONTACT ===== */
+    .contact-section {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+      text-align: center;
+    }
+    .contact-box {
+      background: var(--dark3);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: var(--radius);
+      padding: 40px 30px;
+    }
+    .contact-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+    .contact-btns a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 800;
+      transition: all 0.3s;
+    }
+    .contact-btns .cwa2 {
+      background: var(--whatsapp);
+      color: white;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.25);
+    }
+    .contact-btns .cwa2:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(37,211,102,0.4); }
+    .contact-btns .cph2 {
+      background: var(--phone);
+      color: white;
+      box-shadow: 0 4px 20px rgba(0,123,255,0.25);
+    }
+    .contact-btns .cph2:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(0,123,255,0.4); }
+ 
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--dark2);
+      border-top: 1px solid rgba(201,168,76,0.2);
+      padding: 30px 20px;
+      text-align: center;
+    }
+    footer .footer-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    footer .footer-logo img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      object-fit: cover;
+    }
+    footer .footer-logo span {
+      font-family: 'Cairo', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--gold);
+    }
+    footer p {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+ 
+    /* ===== FIXED CONTACTS ===== */
+    .fixed-wa {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      width: 58px;
+      height: 58px;
+      background: var(--whatsapp);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      text-decoration: none;
+      z-index: 9999;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: all 0.3s;
+      animation: bounce 2s ease-in-out infinite;
+    }
+    .fixed-call {
+      position: fixed;
+      bottom: 30px;
+      left: 20px;
+      width: 58px;
+      height: 58px;
+      background: var(--phone);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      text-decoration: none;
+      z-index: 9999;
+      box-shadow: 0 4px 20px rgba(0,123,255,0.4);
+      transition: all 0.3s;
+    }
+    .fixed-wa:hover, .fixed-call:hover { transform: scale(1.1); }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+ 
+    /* ===== SCROLL TO TOP ===== */
+    .scroll-top {
+      position: fixed;
+      bottom: 100px;
+      left: 20px;
+      width: 46px;
+      height: 46px;
+      background: rgba(201,168,76,0.15);
+      border: 2px solid var(--gold);
+      color: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 9998;
+      transition: all 0.3s;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .scroll-top.visible { opacity: 1; pointer-events: all; }
+    .scroll-top:hover { background: var(--gold); color: #000; transform: translateY(-2px); }
+ 
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .services-grid { grid-template-columns: 1fr; }
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+      .contact-btns a { padding: 14px 22px; font-size: 14px; }
+    }
+  </style>
 </head>
 <body>
-    <!-- الهيدر -->
-    <header>
-        <div class="container header-content">
-            <div class="logo">
-                <a href="#">مؤسسة فن الشرقية</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#services">خدماتنا</a></li>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#cities">المدن</a></li>
-                    <li><a href="#faq">الأسئلة الشائعة</a></li>
-                    <li><a href="#contact">تواصل معنا</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- قسم الهيرو -->
-    <section class="hero">
-        <div class="container">
-            <h1>تأجير كراسي وطاولات تأجير كنب تأجير جلسات ومستلزمات المناسبات</h1>
-            <p>تأجير مستلزمات الحفلات والمناسبات بأفضل جودة وأقل الأسعار في المنطقة الشرقية</p>
-            <div>
-                <a href="https://wa.me/966501012166" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> تواصل عبر واتساب</a>
-                <a href="tel:0501012166" class="btn"><i class="fas fa-phone"></i> اتصل بنا الآن</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- خدماتنا -->
-    <section id="services">
-        <div class="container">
-            <h2 class="section-title">خدماتنا</h2>
-            <div class="services-grid">
-               <div class="service-card">
-    <div class="service-imgs-stack">
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/2jKLsVvs/13dbc673-913a-439c-b8b8-dd25c7319bb6.jpg')"></div>
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/2ys6VL73/f8c5f4fb-ccbb-4532-9ae2-ef730a50305c.jpg')"></div>
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/Lsx8jb3c/15fb68ee-7b69-4eaf-9618-14afabe118e6.jpg')"></div>
+ 
+  <!-- TOP BAR -->
+  <div class="topbar">
+    📞 اتصل الآن: <a href="tel:0537496082">0537496082</a> &nbsp;|&nbsp; خدمة 24 ساعة طوال أيام الأسبوع &nbsp;|&nbsp; توصيل وتركيب مجاني
+  </div>
+ 
+  <!-- NAV -->
+  <nav class="main-nav">
+    <a class="nav-logo" href="#">
+      <img src="https://i.postimg.cc/kGRqDB8H/Gemini-Generated-Image-nmkjt6nmkjt6nmkj.png" alt="حفلات الشرقية لوجو"/>
+      <span>حفلات الشرقية</span>
+    </a>
+    <div class="nav-links">
+      <a href="#services">خدماتنا</a>
+      <a href="#pricing">الأسعار</a>
+      <a href="#areas">مناطق الخدمة</a>
+      <a href="#about">من نحن</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+      <a href="#contact">تواصل معنا</a>
     </div>
-    <div class="service-content">
-        <h3>تأجير كراسي وطاولات</h3>
-        <p>كراسي ملكي كراسي شفافة بمختلف الأنواع والأشكال، تأجير كراسي، كراسي ملكي، وكراسي للجلسات. متوفرة بألوان متعددة وتصاميم عصرية تناسب جميع أنواع المناسبات.
-      · تأجير كراسي تأجير كراسي عادية الدمام، تأجير كراسي عادية الخبر، تأجير كراسي عادية مكة
-· كراسي بلاستيك للايجار، كراسي معدن للايجار، كراسي قماش للايجار، كراسي حدائق للايجار
-· تأجير كراسي مؤتمرات، تأجير كراسي ندوات، تأجير كراسي محاضرات، تأجير كراسي اجتماعات
-· تأجير كراسي مدرسية، تأجير كراسي حفلات، تأجير كراسي أفراح، تأجير كراسي مناسبات
-· كراسي ايجار يومي، كراسي ايجار أسبوعي، كراسي ايجار شهري
-· أسعار تأجير الكراسي العادية، كراسي ايجار رخيصة
-· تأجير كراسي للفعاليات، تأجير كراسي للحفلات، تأجير كراسي للأعراس
-
-نوفر خدمة تأجير الكراسي العادية بمختلف أنواعها وأشكالها لتناسب جميع أنواع الفعاليات والمناسبات في جميع مدن الشرقية. كراسينا العادية تتميز بالمتانة والراحة والأسعار المنافسة.
-
-تشكيلة الكراسي العادية المتوفرة:
-
-· كراسي بلاستيكية متينة بمختلف الألوان
-· كراسي معدنية قابلة للطي للاستخدام الداخلي والخارجي
-· كراسي قماش مريحة للجلسات الطويلة
-· كراسي مؤتمرات بمكتب صغير
-· كراسي مدرسية للفعاليات التعليمية
-· كراسي حدائق للفعاليات الخارجية
-
-جميع الكراسي نظيفة ومعقمة ويتم صيانتها دوريًا. نوفر خدمة التوصيل والتركيب المجانية في جميع المدن الرئيسية.
-
----
-
-تأجير كراسي ملكية
-
-تأجير كراسي ملكية فاخرة للأفراح والمناسبات الملكية في السعودية
-
-· تأجير كراسي ملكية الرياض، تأجير كراسي ملكية جدة، تأجير كراسي ملكية الدمام، تأجير كراسي ملكية الخبر
-· كراسي عرش للايجار، كراسي ملكية فاخرة، كراسي أفراح ملكية، كراسي مناسبات راقية
-· تأجير كراسي للعروسين، تأجير كراسي استقبال، تأجير كراسي كبار الشخصيات
-· كراسي مخمل للايجار، كراسي ذهبية للايجار، كراسي فاخرة للايجار
-· تأجير كراسي للقصور، تأجير كراسي للاحتفالات الكبيرة، تأجير كراسي للحفلات الملكية
-· أسعار تأجير الكراسي الملكية، كراسي ملكية ايجار
-
-المحتوى: للمناسبات الملكية والفاخرة، نقدم لكم خدمة تأجير الكراسي الملكية التي تضيف لمسة من الفخامة والتميز إلى حفلاتكم. كراسينا المصممة بدقة وعناية تناسب الأفراح الكبيرة والمناسبات الرسمية.
-
-أنواع الكراسي الملكية المتوفرة:
-
-· كراسي عرش للعروسين بتصميمات ملكية
-· كراسي استقبال فاخرة لكبار الضيوف
-· كراسي مخملية مذهبة للقاعات الفاخرة
-· كراسي منقوشة بتصميمات عصرية وأنيقة
-· كراسي ملكية مع ظهر عالٍ وتنجيد فاخر
-· كراسي مخصصة للتصوير في صالات الأفراح
-
-جميع الكراسي الملكية محافظة على جودتها ونظافتها، ونوفر خدمة التوصيل والتركيب مع فريق متخصص لضمان الترتيب الأمثل.
-
----
-
-تأجير كراسي شفافة
-
-عنوان الصفحة: تأجير كراسي شفافة (أكريليك) عصرية للمناسبات والأفراح في السعودية
-
-الكلمات المفتاحية:
-
-· تأجير كراسي شفافة تأجير كراسي شفافة الدمام، تأجير كراسي شفافة الخبر
-· كراسي اكريليك للايجار، كراسي شفافة للايجار، كراسي بلورية للايجار، كراسي زجاج للايجار
-· تأجير كراسي عصرية، تأجير كراسي مودرن، تأجير كراسي حديثة
-· كراسي أفراح شفافة، كراسي مناسبات شفافة، كراسي حفلات شفافة
-· تأجير كراسي للتصوير، تأجير كراسي للديكور، تأجير كراسي للقاعات المفتوحة
-· أسعار تأجير الكراسي الشفافة، كراسي اكريليك ايجار
-
-المحتوى: للمناسبات العصرية والحديثة، نقدم لكم خدمة تأجير الكراسي الشفافة (الأكريليك) التي تضيف لمسة عصرية وأنيقة إلى ديكور حفلاتكم. كراسي الأكريليك الشفافة تتميز بأنها تناسب جميع ألوان الديكور وتضيف إحساسًا بالاتساع والأناقة.
-
-مميزات كراسينا الشفافة:
-
-· مصنوعة من مواد أكريليك عالية الجودة ومتينة
-· تصميم عصري يناسب الأفراح والمناسبات الحديثة
-· خفيفة الوزن وسهلة النقل والترتيب
-· متوفرة بتصميمات مختلفة (مع ظهر، بدون ظهر، بمكتب)
-· مناسبة للاستخدام الداخلي في القاعات والصالات
-· سهلة التنظيف وتحافظ على مظهرها لسنوات
-
-كراسي الأكريليك الشفافة مثالية لل:
-
-· حفلات الزفاف العصرية
-· حفلات التخرج والاحتفالات الحديثة
-· المعارض والفعاليات الفنية
-· حفلات الاستقبال في القاعات المفتوحة
-· جلسات التصوير والفعاليات الإعلامية
-· قهوجيين وصبابين، صباب للايجار، قهوجي مناسبات، صباب أفراح
-· توفير قهوجيين، توفير صبابين، خدمات قهوجي، خدمات صباب
-· قهوجي، قهوجي الدمام، قهوجي الخبر
-· صباب قهوة، صباب الدمام، صباب الخبر
-· قهوجي أفراح، قهوجي حفلات، قهوجي أعراس
-· صباب مناسبات، صباب فعاليات، صباب مؤتمرات
-· أسعار القهوجي، أسعار الصباب
-
-المحتوى: نوفر قهوجيين وصبابين محترفين بخبرة طويلة في تقديم القهوة العربية الأصيلة والشاي والمشروبات الساخنة في مناسباتكم. فريقنا مدرب على أعلى مستوى لخدمة ضيوفكم بأسلوب راقٍ وأصيل.
-
-خدماتنا تشمل:
-
-· قهوجي محترف لتحضير القهوة العربية الأصيلة
-· صباب متخصص في تقديم الشاي والمشروبات الساخنة
-· توفير جميع أدوات القهوة العربية من دلال ومباخر
-· تقديم خدمات القهوة والشاي وفق العادات والتقاليد
-· العمل لفترات طويلة خلال المناسبات
-
-فريقنا متاح للعمل في جميع مدن المملكة، ونضمن لكم خدمة متقنة ترضي ذوقكم وذوق ضيوفكم.
-نوفر خدمة تأجير الكراسي الشفافة في جميع مدن المملكة مع خدمة التوصيل والتركيب المجانية، كما نقدم عروضًا خاصة للتأجير طويل الأمد.
+    <div class="nav-cta">
+      <a href="https://wa.me/966537496082" target="_blank" class="wa" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+      <a href="tel:0537496082" class="ph" aria-label="اتصل"><i class="fas fa-phone-alt"></i></a>
+    </div>
+  </nav>
+ 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="particles" id="particles"></div>
+    <img src="https://i.postimg.cc/kGRqDB8H/Gemini-Generated-Image-nmkjt6nmkjt6nmkj.png" alt="حفلات الشرقية" class="hero-logo"/>
+    <div class="hero-badge">⭐ رقم 1 في تأجير لوازم الحفلات بالشرقية منذ 2013</div>
+    <h1>
+      <span class="highlight">حفلات الشرقية</span><br/>
+      تأجير لوازم الحفلات والمناسبات
+    </h1>
+    <p class="sub">
+      نقدم تشكيلة متكاملة من <strong>تأجير كنب فاخر</strong>، <strong>جلسات شعبية وخارجية</strong>، <strong>طاولات وكراسي</strong>، <strong>خيام وبيوت شعر</strong>، <strong>مكيفات وسماعات</strong> وخدمات الضيافة. نخدم الدمام والخبر والجبيل وجميع مناطق الشرقية.
+    </p>
+    <div class="hero-keywords">
+      <span>تأجير كنب</span>
+      <span>كنب للايجار</span>
+      <span>جلسات شعبية</span>
+      <span>جلسات خارجية</span>
+      <span>قعدات خارجية</span>
+      <span>طاولات وكراسي</span>
+      <span>زوالي للايجار</span>
+      <span>تأجير خيام</span>
+      <span>مكيفات للايجار</span>
+      <span>سماعات للايجار</span>
+    </div>
+    <div class="hero-btns">
+      <a href="https://wa.me/966537496082" target="_blank" class="btn-wa">
+        <i class="fab fa-whatsapp"></i> تواصل واتساب
+      </a>
+      <a href="tel:0537496082" class="btn-call">
+        <i class="fas fa-phone-alt"></i> 0537496082
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="num">+500</span><span class="label">مناسبة ناجحة</span></div>
+      <div class="stat"><span class="num">12+</span><span class="label">سنة خبرة</span></div>
+      <div class="stat"><span class="num">24/7</span><span class="label">خدمة مستمرة</span></div>
+      <div class="stat"><span class="num">30%</span><span class="label">خصم الكميات</span></div>
+    </div>
+  </section>
+ 
+  <!-- FEATURES STRIP -->
+  <div class="features-strip">
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="icon"><i class="fas fa-truck"></i></div>
+        <h4>توصيل وتركيب مجاني</h4>
+        <p>داخل جميع مناطق الشرقية</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon"><i class="fas fa-clock"></i></div>
+        <h4>خدمة 24 ساعة</h4>
+        <p>على مدار الأسبوع بلا انقطاع</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon"><i class="fas fa-star"></i></div>
+        <h4>جودة مضمونة</h4>
+        <p>تجهيزات راقية بأعلى المعايير</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon"><i class="fas fa-percent"></i></div>
+        <h4>أسعار تنافسية</h4>
+        <p>خصم 30% للكميات الكبيرة</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon"><i class="fas fa-lightning-bolt"></i></div>
+        <h4>تجهيز سريع</h4>
+        <p>في أقل من ساعة في الشرقية</p>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-header">
+      <p class="pre">خدماتنا المتميزة</p>
+      <h2>كل ما تحتاجه لمناسبتك في مكان واحد</h2>
+      <p>نوفر تشكيلة شاملة من لوازم الحفلات والمناسبات بأعلى جودة وأفضل الأسعار</p>
+      <div class="divider"></div>
+    </div>
+    <div class="services-grid">
+ 
+      <!-- كنب -->
+      <article class="service-card">
+        <div class="card-img">
+          <img src="https://i.postimg.cc/zB8WZLW7/aece4d13-45c1-473d-97f0-a4eee60356e5.jpg" alt="تأجير كنب فاخر ملكي الدمام الشرقية" loading="lazy"/>
+          <span class="badge">الأكثر طلباً</span>
+        </div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-couch"></i></div>
+          <h3>تأجير كنب فاخر وملكي</h3>
+          <p>كنب ملكي، ثلاثي، مخمل، عصري وكلاسيكي لجميع المناسبات. تأجير كنب VIP بجودة لا تُضاهى مع خدمة توصيل وتركيب داخل الشرقية.</p>
+          <div class="service-tags">
+            <span>كنب للايجار</span><span>كنب ملكي</span><span>كنب ثلاثي</span><span>كنب مخمل</span><span>كنب VIP</span>
+          </div>
+          <div class="card-btns">
+            <a href="https://wa.me/966537496082" target="_blank" class="cwa"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="tel:0537496082" class="cph"><i class="fas fa-phone-alt"></i> اتصال</a>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- جلسات شعبية -->
+      <article class="service-card">
+        <div class="card-img">
+          <img src="https://i.postimg.cc/4NhbWGyT/86cbdc69-021d-4387-bcb4-7b1d3367bd8f.jpg" alt="تأجير جلسات شعبية خارجية الدمام" loading="lazy"/>
+          <span class="badge">مميز</span>
+        </div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-chair"></i></div>
+          <h3>تأجير جلسات شعبية وخارجية</h3>
+          <p>جلسات ارضية، مرتفعة، مغربية، وخارجية. تأجير قعدات شعبية تراثية مع فرش وزوالي وديكور راقٍ لجميع المناسبات بالشرقية.</p>
+          <div class="service-tags">
+            <span>جلسات شعبية</span><span>جلسات خارجية</span><span>قعدات خارجية</span><span>جلسات مغربية</span><span>زوالي</span>
+          </div>
+          <div class="card-btns">
+            <a href="https://wa.me/966537496082" target="_blank" class="cwa"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="tel:0537496082" class="cph"><i class="fas fa-phone-alt"></i> اتصال</a>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- طاولات وكراسي -->
+      <article class="service-card">
+        <div class="card-img">
+          <img src="https://i.postimg.cc/76Fb6Fkg/6c9678ae-bf6a-4a31-a72d-31fc390bac9f.jpg" alt="تأجير طاولات وكراسي مناسبات الشرقية" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-table"></i></div>
+          <h3>تأجير طاولات وكراسي</h3>
+          <p>طاولات شفاف، طاولات بوفية، طاولات أكل، كراسي ملكي، شفاف، احمر، وكراسي عزاء. جميع الأحجام والأنواع لأي مناسبة.</p>
+          <div class="service-tags">
+            <span>طاولات شفاف</span><span>كراسي ملكي</span><span>طاولات بوفية</span><span>كراسي حفلات</span>
+          </div>
+          <div class="card-btns">
+            <a href="https://wa.me/966537496082" target="_blank" class="cwa"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="tel:0537496082" class="cph"><i class="fas fa-phone-alt"></i> اتصال</a>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- خيام -->
+      <article class="service-card">
+        <div class="card-img">
+          <img src="https://i.postimg.cc/jjW7SQfY/bcd75601-bd08-4467-975f-513c8091845b.jpg" alt="تأجير خيام أوروبية وبيوت شعر الشرقية" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-campground"></i></div>
+          <h3>تأجير خيام وبيوت شعر</h3>
+          <p>خيام أوروبية فاخرة، بيوت شعر، خيام مكيفة بجميع المقاسات. تركيب سريع ومتكامل لحفلات الأعراس والمؤتمرات والمناسبات الخارجية.</p>
+          <div class="service-tags">
+            <span>خيام أوروبية</span><span>بيوت شعر</span><span>خيام مناسبات</span><span>خيام للايجار</span>
+          </div>
+          <div class="card-btns">
+            <a href="https://wa.me/966537496082" target="_blank" class="cwa"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="tel:0537496082" class="cph"><i class="fas fa-phone-alt"></i> اتصال</a>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- مكيفات -->
+      <article class="service-card">
+        <div class="card-img" style="background: linear-gradient(135deg, #0a0a2e, #1a1a4e); display:flex; align-items:center; justify-content:center; height:220px;">
+          <i class="fas fa-snowflake" style="font-size:80px; color: var(--gold); opacity:0.5;"></i>
+        </div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-wind"></i></div>
+          <h3>تأجير مكيفات ودفايات</h3>
+          <p>مكيفات صناعية وسبليت للمناسبات الخارجية والخيام. دفايات شتوية وأجهزة تبريد صيفية مناسبة لجميع أحجام الفعاليات.</p>
+          <div class="service-tags">
+            <span>مكيفات للايجار</span><span>تأجير مكيفات</span><span>دفايات للايجار</span><span>تبريد فعاليات</span>
+          </div>
+          <div class="card-btns">
+            <a href="https://wa.me/966537496082" target="_blank" class="cwa"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="tel:0537496082" class="cph"><i class="fas fa-phone-alt"></i> اتصال</a>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- سماعات -->
+      <article class="service-card">
+        <div class="card-img">
+          <img src="https://i.postimg.cc/QMVpWZRP/04601d7c-af15-4bd6-8f2b-f31c20349689.jpg" alt="تأجير سماعات ومكبرات صوت الشرقية" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-volume-up"></i></div>
+          <h3>تأجير سماعات ومكبرات صوت</h3>
+          <p>أنظمة صوت احترافية، سماعات دي جي، مكبرات صوت بأحدث التقنيات. خدمة صوت متكاملة تناسب الحفلات الكبيرة والصغيرة.</p>
+          <div class="service-tags">
+            <span>سماعات للايجار</span><span>مكبرات صوت</span><span>دي جي</span><span>نظام صوت</span>
+          </div>
+          <div class="card-btns">
+            <a href="https://wa.me/966537496082" target="_blank" class="cwa"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="tel:0537496082" class="cph"><i class="fas fa-phone-alt"></i> اتصال</a>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- قهوجيين -->
+      <article class="service-card">
+        <div class="card-img">
+          <img src="https://i.postimg.cc/J427zw5t/7857562f-ba85-48dc-b631-805602381135.jpg" alt="قهوجيين وصبابين الشرقية الدمام" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-coffee"></i></div>
+          <h3>ضيافة قهوجيين وصبابين</h3>
+          <p>قهوجيين وقهوجيات وصبابين محترفين لتقديم القهوة العربية والتركية والإسبريسو. ضيافة راقية تضفي الفخامة على مناسبتك.</p>
+          <div class="service-tags">
+            <span>قهوجيين</span><span>صبابين</span><span>قهوجيات</span><span>ضيافة</span><span>قهوة عربية</span>
+          </div>
+          <div class="card-btns">
+            <a href="https://wa.me/966537496082" target="_blank" class="cwa"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="tel:0537496082" class="cph"><i class="fas fa-phone-alt"></i> اتصال</a>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- سجاد وممرات -->
+      <article class="service-card">
+        <div class="card-img">
+          <img src="https://i.postimg.cc/x8bQk8RC/9f587383-9f34-4b36-98af-9fe51af9230e.jpg" alt="تأجير سجاد وممرات وحواجز حفلات" loading="lazy"/>
+        </div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-border-all"></i></div>
+          <h3>سجاد وممرات وحواجز وإضاءة</h3>
+          <p>سجاد أحمر وزل ملكي، ممرات فخمة، حواجز ذهبية وفضية، عقود إضاءة بجميع الأنواع. لمسات تنسيق تجعل مناسبتك استثنائية.</p>
+          <div class="service-tags">
+            <span>سجاد احمر</span><span>زل ملكي</span><span>حواجز ذهبية</span><span>عقود إضاءة</span>
+          </div>
+          <div class="card-btns">
+            <a href="https://wa.me/966537496082" target="_blank" class="cwa"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="tel:0537496082" class="cph"><i class="fas fa-phone-alt"></i> اتصال</a>
+          </div>
+        </div>
+      </article>
+ 
+    </div>
+  </section>
+ 
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="section-header">
+      <p class="pre">الأسعار</p>
+      <h2>أسعار تنافسية تناسب جميع الميزانيات</h2>
+      <p>خصم خاص يصل إلى 30% للطلبات الكبيرة فوق 50 قطعة</p>
+      <div class="divider"></div>
+    </div>
+    <div class="pricing-section">
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="svc">كراسي حفلات</div>
+          <div class="price">5 ريال</div>
+          <div class="unit">للقطعة</div>
+        </div>
+        <div class="price-card">
+          <div class="svc">طاولات</div>
+          <div class="price">20 ريال</div>
+          <div class="unit">للطاولة</div>
+        </div>
+        <div class="price-card">
+          <div class="svc">كنب فاخر</div>
+          <div class="price">100 ريال</div>
+          <div class="unit">للقطعة</div>
+        </div>
+        <div class="price-card">
+          <div class="svc">جلسات شعبية</div>
+          <div class="price">تواصل معنا</div>
+          <div class="unit">حسب الطلب</div>
+        </div>
+      </div>
+      <p style="text-align:center; color: var(--text-muted); font-size: 13px; margin-top: 16px;">
+        * تشمل الأسعار التوصيل والتركيب داخل الشرقية · خصم 20% للكميات فوق 50 قطعة
+      </p>
+    </div>
+  </section>
+ 
+  <!-- AREAS -->
+  <section id="areas" class="areas-section">
+    <p class="pre" style="color: var(--gold); font-size:13px; font-weight:700; letter-spacing:2px; margin-bottom:10px;">مناطق الخدمة</p>
+    <h2 style="font-family:'Cairo',sans-serif; font-size:clamp(20px,3.5vw,30px); font-weight:900; color:#fff; margin-bottom:10px;">نصل إليك في كل أنحاء الشرقية</h2>
+    <p style="color: var(--text-muted); font-size:15px;">توصيل وتركيب مجاني في جميع المناطق التالية</p>
+    <div class="areas-grid">
+      <span class="area-tag">الدمام</span>
+      <span class="area-tag">الخبر</span>
+      <span class="area-tag">الجبيل</span>
+      <span class="area-tag">القطيف</span>
+      <span class="area-tag">الظهران</span>
+      <span class="area-tag">سيهات</span>
+      <span class="area-tag">صفوى</span>
+      <span class="area-tag">بقيق</span>
+      <span class="area-tag">رأس تنورة</span>
+      <span class="area-tag">الأحساء</span>
+      <span class="area-tag">حفر الباطن</span>
+    </div>
+  </section>
+ 
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header">
+      <p class="pre">من نحن</p>
+      <h2>حفلات الشرقية - رواد تأجير المناسبات</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="about-section">
+      <div class="about-box">
+        <p>
+          <strong>حفلات الشرقية</strong> هي مؤسسة رائدة في تأجير مستلزمات الحفلات والمناسبات في المنطقة الشرقية منذ عام 2013. نقدم خدمات متكاملة تشمل <strong>تأجير كنب فاخر وملكي</strong>، <strong>تأجير جلسات شعبية وخارجية وقعدات</strong>، <strong>تأجير طاولات وكراسي</strong>، <strong>تأجير زوالي وسجاد</strong>، <strong>تأجير خيام وبيوت شعر</strong>، <strong>تأجير مكيفات ودفايات</strong>، <strong>تأجير سماعات ومكبرات صوت</strong>، وخدمات <strong>القهوجيين والصبابين</strong>.
         </p>
-        <div class="service-contact">
-            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الكراسي"><i class="fab fa-whatsapp"></i> واتساب</a>
-            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
-        </div>
-    </div>
-</div>
-
-<style>
-.service-imgs-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.service-imgs-stack .service-img {
-    height: 150px;
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-</style>
-                
-               <div class="service-card">
-    <div class="service-imgs-stack">
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/LXB5Ynb5/d9c10f4a-7b88-4554-bd11-7429160c225e.jpg')"></div>
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/3JPhh3tc/1f367736-28c3-4f7d-afc8-002ff7025f05.jpg')"></div>
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/qqNffFyr/df7e0e2f-835a-44de-b373-7ade5fdf9f93.jpg')"></div>
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/WpxpNm38/e02d5268-c3da-4f51-a32b-5f94a2f92026.jpg')"></div>
-    </div>
-    <div class="service-content">
-        <h3>تأجير طاولات للمناسبات</h3>
-        <p>تأجير كراسي وطاولات بتصاميم عصرية وتقليدية بمقاسات مختلفة تناسب جميع أنواع المناسبات والاحتياجات. طاولات طعام، طاولات عرض، طاولات مستديرة ومربعة.
-        · تأجير طاولات وكراسي، طاولات للايجار، كراسي للايجار
-· تأجير طاولات وكراسي أفراح، تأجير كراسي وطاولات مناسبات
-· تأجير كراسي عادي، تأجير كراسي ملكي، تأجير كراسي شفاف
-· تأجير طاولات طعام، تأجير طاولات مستديرة، تأجير طاولات مربعة
-· تأجير كراسي حدائق، تأجير كراسي مؤتمرات، تأجير كراسي احتفالات
-· تأجير طاولات كافيه، تأجير طاولات عرض، تأجير طاولات اجتماعات
-· أسعار تأجير الطاولات والكراسي
-
-المحتوى: نوفر خدمة تأجير الطاولات والكراسي بجميع أنواعها وأشكالها للمناسبات والفعاليات في جميع مدن المملكة. لدينا تشكيلة واسعة تناسب جميع الأذواق والاحتياجات.
-
-أنواع الكراسي المتاحة:
-
-· كراسي عادية للمناسبات البسيطة
-· كراسي ملكية فاخرة للأفراح والمناسبات الرسمية
-· كراسي شفاف (أكريليك) للمناسبات العصرية
-· كراسي حدائق للفعاليات الخارجية
-· كراسي مؤتمرات للندوات والاجتماعات
-· كراسي قصر للاحتفالات الكبيرة
-
-أنواع الطاولات المتاحة:
-
-· طاولات طعام مستديرة للولائم
-· طاولات مربعة للجلسات الصغيرة
-· طاولات كافيه للمقاهي المؤقتة
-· طاولات عرض للمعارض والمؤتمرات
-· طاولات اجتماعات للندوات والورش
-· طاولات قصر للمناسبات الملكية
-
-نوفر خدمة التوصيل والتركيب المجانية، مع عروض خاصة للتأجير لمدة طويلة.
+        <p>
+          نخدم جميع مناطق الشرقية من الدمام والخبر والجبيل والقطيف والظهران وما حولها بخدمة توصيل وتركيب احترافية وسريعة. نحرص على توفير أحدث التجهيزات وأرقى الأثاث لضمان نجاح مناسبتك، سواء كانت <strong>حفل زفاف</strong>، <strong>مناسبة عائلية</strong>، <strong>مؤتمر رسمي</strong>، أو <strong>فعالية تجارية</strong>.
         </p>
-        <div class="service-contact">
-            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الطاولات"><i class="fab fa-whatsapp"></i> واتساب</a>
-            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
-        </div>
-    </div>
-</div>
-
-<style>
-.service-imgs-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.service-imgs-stack .service-img {
-    height: 150px;
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-</style>
-                
-               <div class="service-card">
-    <div class="service-imgs-stack">
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/6pRx6PFL/ba95105f-a6fb-421f-99fe-486d5fc951fa.jpg')"></div>
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/SxcHbMzg/3c22b527-f4cf-4706-b10b-16120719ec9f.jpg')"></div>
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/Qt7X2ths/29e03db6-e6a8-471e-b8e9-6c226b87d7a5.jpg')"></div>
-    </div>
-    <div class="service-content">
-        <h3>تأجير كنب</h3>
-        <p>كنب فاخر ومريح بأسعار مناسبة لجميع المناسبات، متوفر بألوان وتصاميم متنوعة تناسب ذوقك. كنب، كنب ثلاثي، وقطع استرخاء متعددة.
-        · تأجير كنب، تأجير كنب الدمام، تأجير كنب الخبر، تأجير كنب الظهران، تأجير كنب الجبيل، تأجير كنب الأحساء، تأجير كنب القطيف، تأجير كنبات، تأجير كنب ثلاثي
-· كنب للايجار، كنب ثلاثي للايجار، كنب للايجار الدمام، كنب للايجار الخبر، كنب للايجار الجبيل
-· تأجير كنب ثلاثي، تأجير كنبات زاوية، تأجير كنب مستقيم، تأجير كنب L، تأجير كنب U
-· تأجير كنب فاخر، تأجير كنب جلوس، تأجير كنب استقبال، تأجير كنب صالة، تأجير كنب مناسبات، تأجير كنب أفراح، تأجير كنب حفلات، تأجير كنب أعراس
-· كنب ملكي للايجار، كنب سادة للايجار، كنب مخمل للايجار، كنب جلد للايجار
-· تأجير كنب يومي، تأجير كنب أسبوعي، تأجير كنب شهري
-· أسعار تأجير الكنب، كنب ايجار رخيص، عروض تأجير الكنب
-
- نقدم لكم خدمة تأجير كنب فاخرة ومناسبة لجميع أنواع المناسبات في جميع مدن الشرقية. سواء كنت تقيم حفل زفاف في الخبر، أو حفل استقبال في الظهران، أو مناسبة عائلية في الدمام، لدينا تشكيلة واسعة من الكنب الفاخرة التي تناسب ذوقك الرفيع.
-
-تشمل خدماتنا:
-
-· تأجير كنب ثلاثي للصالات الصغيرة
-· تأجير كنبات زاوية للصالات الكبيرة
-· تأجير كنب مستقيم للمساحات المستطيلة
-· تأجير كنب على شكل L للمناطق الزاوية
-· تأجير كنب على شكل U لجلسات الاستقبال الرسمية
-
-جميع قطع الكنب لدينا نظيفة ومعقمة ومحافظة على جودتها. نوفر خدمة التوصيل والتركيب المجانية في  الدمام، والخبر. اسعارنا مناسبة ومنافسة مع عروض خاصة للتأجير الأسبوعي والشهري
+        <p>
+          نتميز بأسعار تنافسية وخصومات تصل إلى 30% للكميات الكبيرة، مع ضمان جودة عالية لجميع التجهيزات المؤجرة. فريقنا المحترف على أتم الاستعداد لخدمتك 24 ساعة في اليوم طوال أيام الأسبوع.
         </p>
-        <div class="service-contact">
-            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الكنب"><i class="fab fa-whatsapp"></i> واتساب</a>
-            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="section-header">
+      <p class="pre">الأسئلة الشائعة</p>
+      <h2>أجوبة على أبرز تساؤلاتكم</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="faq-section">
+ 
+      <div class="faq-item">
+        <div class="faq-q">ما هي مناطق الخدمة؟ <i class="fas fa-plus icon"></i></div>
+        <div class="faq-a">نغطي جميع مناطق الشرقية: الدمام، الخبر، الجبيل، القطيف، الظهران، سيهات، صفوى، بقيق، رأس تنورة، الأحساء، وحفر الباطن. التوصيل والتركيب مجاني داخل هذه المناطق.</div>
+      </div>
+ 
+      <div class="faq-item">
+        <div class="faq-q">كيف أحجز الخدمة؟ <i class="fas fa-plus icon"></i></div>
+        <div class="faq-a">يمكنك الحجز عبر الاتصال المباشر على الرقم 0537496082 أو التواصل معنا عبر واتساب على نفس الرقم. فريقنا متاح 24/7 لاستقبال طلباتك.</div>
+      </div>
+ 
+      <div class="faq-item">
+        <div class="faq-q">هل يوجد خصم للكميات الكبيرة؟ <i class="fas fa-plus icon"></i></div>
+        <div class="faq-a">نعم، نقدم خصمًا يصل إلى 30% للطلبات الكبيرة التي تتجاوز 50 قطعة. كما نوفر عروض خاصة للحفلات الكبيرة وحفلات الأعراس.</div>
+      </div>
+ 
+      <div class="faq-item">
+        <div class="faq-q">هل التوصيل والتركيب مجاني؟ <i class="fas fa-plus icon"></i></div>
+        <div class="faq-a">نعم، التوصيل والتركيب مجاني داخل مناطق الشرقية الرئيسية. اتصل بنا للاستفسار عن المناطق الأبعد.</div>
+      </div>
+ 
+      <div class="faq-item">
+        <div class="faq-q">ما هو أقل وقت للحجز قبل المناسبة؟ <i class="fas fa-plus icon"></i></div>
+        <div class="faq-a">يُفضل الحجز قبل يوم إلى يومين من المناسبة لضمان توفر الكميات. لكننا نستطيع تلبية الطلبات العاجلة في نفس اليوم حسب التوفر.</div>
+      </div>
+ 
+      <div class="faq-item">
+        <div class="faq-q">ما أنواع الكنب المتوفرة؟ <i class="fas fa-plus icon"></i></div>
+        <div class="faq-a">لدينا كنب ملكي، ثلاثي، مخمل، VIP، عصري، كلاسيكي، وكنب جلد. جميع الأنواع متاحة بألوان وأحجام متعددة لتناسب ذوقك ومناسبتك.</div>
+      </div>
+ 
+      <div class="faq-item">
+        <div class="faq-q">هل تتوفر خدمة جلسات خارجية وقعدات؟ <i class="fas fa-plus icon"></i></div>
+        <div class="faq-a">نعم، نوفر جلسات شعبية خارجية، قعدات أرضية ومرتفعة، جلسات مغربية، وزوالي. جميعها مع ديكور راقٍ وفرش مميز مناسب للمناسبات الخارجية.</div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header">
+      <p class="pre">تواصل معنا</p>
+      <h2>احجز الآن واحصل على أفضل عرض</h2>
+      <p>فريقنا جاهز لمساعدتك في تجهيز مناسبتك بأفضل الطرق</p>
+      <div class="divider"></div>
+    </div>
+    <div class="contact-section">
+      <div class="contact-box">
+        <p style="font-size:16px; color: var(--text-muted); margin-bottom:8px;">للحجز والاستفسار</p>
+        <p style="font-family:'Cairo',sans-serif; font-size:28px; font-weight:900; color: var(--gold);">0537496082</p>
+        <p style="font-size:13px; color: var(--text-muted); margin-top:6px;">متاحون 24 ساعة · 7 أيام في الأسبوع</p>
+        <div class="contact-btns">
+          <a href="https://wa.me/966537496082" target="_blank" class="cwa2"><i class="fab fa-whatsapp"></i> تواصل واتساب</a>
+          <a href="tel:0537496082" class="cph2"><i class="fas fa-phone-alt"></i> اتصل الآن</a>
         </div>
+      </div>
     </div>
-</div>
-
-<style>
-.service-imgs-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.service-imgs-stack .service-img {
-    height: 120px;
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-</style>
-                
-               <div class="service-card">
-    <div class="service-imgs-stack">
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/9MBq6JWc/IMG-3187.jpg')"></div>
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/zvB39Ntk/7b6ec75e-1a97-48e4-ac81-0953c241ce1d.jpg')"></div>
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/SKfsRRHr/b3cc086b-e485-4518-904b-9d664bbc29c4.jpg')"></div>
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/gJ5P2Pcs/IMG-3385.jpg')"></div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="https://i.postimg.cc/kGRqDB8H/Gemini-Generated-Image-nmkjt6nmkjt6nmkj.png" alt="حفلات الشرقية"/>
+      <span>حفلات الشرقية</span>
     </div>
-    <div class="service-content">
-        <h3>تأجير سماعات تأجير عقود اضائة وليزرات وحواجز</h3>
-        <p>أنظمة صوتية متكاملة بجودة عالية تناسب جميع أنواع المناسبات وعقود اضائة وليزرات من حفلات وأفراح ومؤتمرات. ميكروفونات، مكبرات صوت، ومعدات DJ احترافية.
-        · تأجير سماعات، تأجير ليزرات، تأجير إضائة، تأجير صوتيات
-· سماعات للايجار، ليزرات للايجار، إضاءة للايجار
-· تأجير سماعات مناسبات، تأجير ليزرات أفراح، تأجير إضاءة حفلات
-· تأجير عقود إضاءة، تأجير عقد إضاءة، تأجير ثريات
-· تأجير نظام صوت، تأجير ميكروفونات، تأجير معدات صوت
-· تأجير شاشات عرض، تأجير بروجكترات، تأجير ديجي
-· أسعار تأجير السماعات، أسعار تأجير الإضاءة
-
-نوفر أحدث أنظمة الصوت والإضاءة والليزر للمناسبات والفعاليات في جميع أنحاء مدن الشرقية. سواء كنت تقيم حفلة زفاف، مؤتمر، حفل تخرج، أو أي مناسبة أخرى، لدينا المعدات المناسبة لاحتياجاتك.
-
-خدماتنا تشمل:
-
-· تأجير أنظمة صوت متكاملة (سماعات، ميكروفونات، mixers)
-· تأجير أنظمة إضاءة متطورة (عقود إضاءة، إضاءة LED، إضاءة نيون)
-· تأجير أنظمة ليزر وأضواء ملونة للديسكو
-· تأجير شاشات عرض وعارضات (بروجكترات)
-· تأجير ديكورات إضاءة للقاعات والصالات
-· تأجير ثريات فاخرة للقاعات الملكية
-
-جميع المعدات حديثة وبجودة عالية، مع وجود فنيي صوت وإضاءة متخصصين لإدارة المعدات خلال الفعالية.
-        </p>
-        <div class="service-contact">
-            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير السماعات"><i class="fab fa-whatsapp"></i> واتساب</a>
-            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
-        </div>
+    <p>رقم 1 في تأجير لوازم الحفلات والمناسبات بالمنطقة الشرقية منذ 2013</p>
+    <p>الدمام | الخبر | الجبيل | القطيف | الظهران وجميع مناطق الشرقية</p>
+    <p style="margin-top:12px;">
+      📞 <a href="tel:0537496082">0537496082</a> &nbsp;|&nbsp;
+      <a href="https://wa.me/966537496082">واتساب</a>
+    </p>
+    <p style="margin-top:16px; font-size:12px; color:#555;">
+      &copy; 2025 حفلات الشرقية لتأجير لوازم الحفلات والمناسبات. جميع الحقوق محفوظة.
+    </p>
+    <!-- Hidden SEO Keywords Block -->
+    <div style="position:absolute; width:1px; height:1px; overflow:hidden; opacity:0;" aria-hidden="true">
+      تأجير كنب الدمام، كنب للايجار الخبر، تأجير جلسات شعبية الشرقية، تأجير قعدات خارجية الدمام،
+      جلسات خارجية للايجار، تأجير زوالي، تأجير طاولات وكراسي الدمام، تأجير مكيفات الشرقية،
+      تأجير سماعات الدمام، تأجير خيام أوروبية، بيوت شعر للايجار، قهوجيين الشرقية،
+      صبابين الدمام، تأجير لوازم حفلات الجبيل، مناسبات الخبر، حفلات زفاف الشرقية،
+      كنب ملكي للايجار، كنب ثلاثي للايجار، جلسات مغربية للايجار، تأجير اثاث حفلات
     </div>
-</div>
-
-<style>
-.service-imgs-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.service-imgs-stack .service-img {
-    height: 150px;
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-</style>
-                
-              <div class="service-card">
-    <div class="service-imgs-stack">
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/XNQqZMtM/08a070e7-f710-4b03-abcc-79167b859375.jpg')"></div>
-        <div class="service-img" style="background-image: url('https://i.postimg.cc/qvnpxWDv/5470c78b-3651-42f2-8e63-5d8d8850ad63.jpg')"></div>
-    </div>
-    <div class="service-content">
-        <h3>تأجير مكيفات ودفايات</h3>
-        <p>حلول تكييف وتدفئة مبتكرة للمناسبات في الأماكن المفتوحة والمغلقة بجميع الأحجام. مكيفات صحراوي، مكيفات فريون، ودفايات خارجية.
-        · تأجير مكيفات، تأجير مكيفات جدة، تأجير مكيفات الدمام، تأجير مكيفات الخبر، تأجير مكيفات فريون، تأجير مكيفات صحراوي
-· مكيفات للايجار، تكييف للايجار، تأجير مكيف صحراوية، تأجير مكيفات مناسبات، تأجير مكيفات فعاليات
-· تأجير مكيف صحراوي، تأجير مكيف مركزي، تأجير مكيف شباك، تأجير مكيف فريون، تأجير مكيف متنقل
-· تأجير مكيفات للأفراح، تأجير مكيفات للمؤتمرات، تأجير مكيفات للمعارض، تأجير مكيفات للحفلات
-· أسعار تأجير المكيفات، تأجير مكيفات يومي، تأجير مكيفات أسبوعي
-· تكييف صالات للأفراح، تكييف خيام للايجار، تبريد فعاليات
-
- نساعدك على تحمل حرارة الصيف بخدمات تأجير المكيفات بأنواعها المختلفة. نوفر مكيفات صحراوي وفريون بمختلف القدرات (18,000 وحدة، 24,000 وحدة، 36,000 وحدة) للمناسبات والفعاليات في جميع أنحاء مدن الشرقية.
-
-خدماتنا تشمل:
-
-· تأجير مكيفات صحراوي للصالات والمجالس
-· تأجير مكيفات متنقلة للمساحات الصغيرة
-· تأجير مكيفات صحراوية للخيام والفعاليات الخارجية
-· تأجير أنظمة تبريد مركزي للمساحات الكبيرة
-· تأجير مكيفات شباك للمساحات المحدودة
-
-نقوم بالتركيب والصيانة والتشغيل مع فريق فني متخصص، ونضمن لكم تبريداً فعالاً طيلة فترة الفعالية. اسعارنا مناسبة وتشمل التركيب والصيانة.
-        </p>
-        <div class="service-contact">
-            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير المكيفات"><i class="fab fa-whatsapp"></i> واتساب</a>
-            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
-        </div>
-    </div>
-</div>
-
-<style>
-.service-imgs-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.service-imgs-stack .service-img {
-    height: 150px;
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-</style>
-                
-              <div class="service-card">
-    <div class="service-gallery">
-        <div class="gallery-img active" style="background-image: url('https://i.postimg.cc/SK2q9sX8/994e7dee-f3cd-4ef3-a9ac-b04525aa07c3.jpg')"></div>
-        <div class="gallery-img" style="background-image: url('https://i.postimg.cc/65WX0z2B/4c80b033-3ab9-44d1-938e-cd0632fc9125.jpg')"></div>
-        <div class="gallery-img" style="background-image: url('https://i.postimg.cc/vHHJ9BkB/a8e7c83f-73f5-4110-a2b0-de0a00eee2aa.jpg')"></div>
-        <div class="gallery-nav">
-            <button class="gallery-prev"><i class="fas fa-chevron-right"></i></button>
-            <button class="gallery-next"><i class="fas fa-chevron-left"></i></button>
-        </div>
-    </div>
-    <div class="service-content">
-        <h3>تأجير جلسات شعبية</h3>
-        <p>جلسات شعبية أصيلة بتصميمات تراثية وأنيقة تعكس روح الأصالة والتراث في مناسبتك. جلسات مغربي، وسائد تقليدية، وديكورات تراثية.
-        · تأجير جلسات، تأجير جلسات شعبية، تأجير جلسات الدمام، تأجير جلسات الخبر
-· جلسات للايجار، تأجير جلسات مغربي، تأجير جلسات شعبية، تأجير جلسات خارجية
-· تأجير جلسات outside، تأجير جلسات مغربية، تأجير جلسات بر
-· تأجير جلسات أفراح، تأجير جلسات حفلات، تأجير جلسات استقبال
-· تأجير جلسات ملكية، تأجير جلسات فاخرة، تأجير جلسات عصرية
-· أسعار تأجير الجلسات، جلسات ايجار يومي
-
- نوفر تشكيلة مميزة من الجلسات الشعبية الأصيلة والجلسات المغربية للمناسبات المختلفة. سواء كنت تخطط لجلسة outside  أو جلسة عرسية في الدمام، أو جلسة شعبية في الخبر، لدينا ما يناسبك.
-
-أنواع الجلسات المتاحة:
-
-· جلسات شعبية تقليدية للاستراحات والبر
-· جلسات مغربي فاخرة للأفراح والمناسبات
-· جلات outside للحدائق والفعاليات الخارجية
-· جلسات رمل للشواطئ والمناطق الصحراوية
-· جلسات ملكية للضيوف المميزين
-· جلسات عصرية للشباب والأحداث الخاصة
-
-جميع الجلسات مزودة بالوسائد والزراير والمفروشات المناسبة، ونوفر خدمة التركيب والتنسيق المجانية.
-        </p>
-        <div class="service-contact">
-            <a href="https://wa.me/966501012166?text=أرغب في الاستفسار عن تأجير الجلسات الشعبية"><i class="fab fa-whatsapp"></i> واتساب</a>
-            <a href="tel:0501012166"><i class="fas fa-phone"></i> اتصل</a>
-        </div>
-    </div>
-</div>
-
-<style>
-.service-gallery {
-    position: relative;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 8px 8px 0 0;
-}
-
-.gallery-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.gallery-img.active {
-    opacity: 1;
-}
-
-.gallery-nav {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-}
-
-.gallery-nav button {
-    background: rgba(255, 255, 255, 0.7);
-    border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gallery-nav button:hover {
-    background: rgba(255, 255, 255, 0.9);
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const galleryImages = document.querySelectorAll('.gallery-img');
-    const prevButton = document.querySelector('.gallery-prev');
-    const nextButton = document.querySelector('.gallery-next');
-    let currentIndex = 0;
-
-    function showImage(index) {
-        galleryImages.forEach(img => img.classList.remove('active'));
-        galleryImages[index].classList.add('active');
-    }
-
-    prevButton.addEventListener('click', function() {
-        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
-        showImage(currentIndex);
+  </footer>
+ 
+  <!-- FIXED BUTTONS -->
+  <a href="https://wa.me/966537496082" target="_blank" class="fixed-wa" aria-label="تواصل واتساب">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:0537496082" class="fixed-call" aria-label="اتصل الآن">
+    <i class="fas fa-phone-alt"></i>
+  </a>
+  <button class="scroll-top" id="scrollTop" aria-label="العودة للأعلى" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+ 
+  <script>
+    // Scroll to top button
+    const scrollBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      scrollBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+ 
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
     });
-
-    nextButton.addEventListener('click', function() {
-        currentIndex = (currentIndex + 1) % galleryImages.length;
-        showImage(currentIndex);
-    });
-
-    // التبديل التلقائي بين الصور كل 3 ثواني
-    setInterval(function() {
-        currentIndex = (currentIndex + 1) % galleryImages.length;
-        showImage(currentIndex);
-    }, 5000);
-});
-</script>
-                
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- من نحن -->
-    <section id="about" class="features">
-        <div class="container">
-            <h2 class="section-title">من نحن</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">فن الشرقية هي الوجهة الأولى في المنطقة الشرقية لتأجير مستلزمات الحفلات والمناسبات. نحن نقدم حلولاً متكاملة تجمع بين الجودة العالية والأسعار التنافسية والخدمة المتميزة.</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-medal"></i>
-                    <h3>جودة عالية</h3>
-                    <p>نوفر منتجات عالية الجودة وحديثة يتم صيانتها دورياً لضمان رضاكم</p>
-                </div>
-                
-                <div class="feature-card">
-                    <i class="fas fa-tags"></i>
-                    <h3>أسعار مناسبة</h3>
-                    <p>نقدم أسعاراً تنافسية تناسب جميع الفئات مع خيارات دفع مرنة</p>
-                </div>
-                
-                <div class="feature-card">
-                    <i class="fas fa-truck"></i>
-                    <h3>توصيل سريع</h3>
-                    <p>خدمة توصيل سريعة لجميع مدن المنطقة الشرقية في الوقت المحدد</p>
-                </div>
-                
-                <div class="feature-card">
-                    <i class="fas fa-headset"></i>
-                    <h3>دعم فني</h3>
-                    <p>فريق دعم فني متاح على مدار الساعة لمساعدتكم في جميع استفساراتكم</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- المدن -->
-    <section id="cities" class="cities">
-        <div class="container">
-            <h2 class="section-title">خدماتنا متاحة في جميع مدن المنطقة الشرقية</h2>
-            <div class="cities-grid">
-                <div class="city-card">
-                    <h3>الدمام</h3>
-                    <p>تأجير معدات مناسبات في الدمام</p>
-                </div>
-                <div class="city-card">
-                    <h3>الخبر</h3>
-                    <p>تأجير معدات مناسبات في الخبر</p>
-                </div>
-                <div class="city-card">
-                    <h3>القطيف</h3>
-                    <p>تأجير معدات مناسبات في القطيف</p>
-                </div>
-                <div class="city-card">
-                    <h3>الجبيل</h3>
-                    <p>تأجير معدات مناسبات في الجبيل</p>
-                </div>
-                <div class="city-card">
-                    <h3>الأحساء</h3>
-                    <p>تأجير معدats مناسبات في الأحساء</p>
-                </div>
-                <div class="city-card">
-                    <h3>بقيق</h3>
-                    <p>تأجير معدات مناسبات في بقيق</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- الأسئلة الشائعة -->
-    <section id="faq">
-        <div class="container">
-            <h2 class="section-title">الأسئلة الشائعة</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>ما هي مدة التأجير المتاحة؟</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>نقدم فترات تأجير مرنة تبدأ من يوم واحد وتصل إلى عدة أشهر حسب احتياجاتك. يمكنك اختيار المدة المناسبة لمناسبتك مع إمكانية التمديد إذا لزم الأمر. نحن نتفهم أن كل مناسبة لها متطلباتها الخاصة، لذلك نحن نعمل على توفير حلول تأجير تلائم جميع المدد والاحتياجات.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>هل تتضمن الخدمة التوصيل والتركيب؟</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>نعم، جميع خدماتنا تتضمن التوصيل والتركيب في الموقع بالإضافة إلى التفكيك بعد انتهاء فترة التأجير. فريقنا الفني المحترف سيتولى كل هذه المهمة بدقة واحترافية. نحن نضمن وصول المنتجات في الوقت المحدد وتركيبها بشكل متقن لضمان نجاح مناسبتك.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>كيف يمكنني حجز الخدمة؟</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>يمكنك حجز الخدمة عبر الاتصال بنا مباشرة على الرقم 0501012166، أو عبر الواتساب على نفس الرقم، أو عبر وسائل التواصل الاجتماعي. ننصح بالحجز المسبق خاصة في مواسم المناسبات لضمان توفر المنتجات في التاريخ المطلوب.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>ما هي وسائل الدفع المتاحة؟</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>نقبل الدفع نقداً، التحويل البنكي، كما نوفر خيار دفع جزء من المبلغ كعربون والباقي عند التسليم. نحن نهدف إلى توفير مرونة في الدفع لتسهيل التعامل معنا.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>هل تقدمون خصومات للكميات أو للعملاء الدائمين؟</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>نعم، نوفر خصومات خاصة للكميات الكبيرة وللأعراس والمناسبات الكبيرة، كما أن لدينا برنامج ولاء للعملاء الدائمين يمنحهم أفضل العروض والخصومات. اتصل بنا لمعرفة التفاصيل والعروض الخاصة المتاحة لمناسبتك.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- اتصل بنا -->
-    <section id="contact" class="features">
-        <div class="container">
-            <h2 class="section-title">تواصل معنا</h2>
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <p>نحن هنا لخدمتك في جميع مدن المنطقة الشرقية</p>
-                <p>اتصل بنا الآن للحصول على استشارة مجانية أو لحجز خدماتنا</p>
-            </div>
-            
-            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
-                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); flex: 1; min-width: 300px;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem; text-align: center;">معلومات التواصل</h3>
-                    <div style="margin-bottom: 1rem;">
-                        <p><i class="fas fa-phone" style="color: var(--primary-color); margin-left: 10px;"></i> <strong>الهاتف:</strong> 0501012166</p>
-                    </div>
-                    <div style="margin-bottom: 1rem;">
-                        <p><i class="fab fa-whatsapp" style="color: #25D366; margin-left: 10px;"></i> <strong>الواتساب:</strong> 0501012166</p>
-                    </div>
-                    <div style="margin-bottom: 1rem;">
-                        <p><i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-left: 10px;"></i> <strong>الموقع:</strong> المنطقة الشرقية - السعودية</p>
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 2rem;">
-                        <a href="https://wa.me/966501012166" class="btn btn-whatsapp" style="margin-bottom: 10px;"><i class="fab fa-whatsapp"></i> تواصل عبر واتساب</a>
-                        <a href="tel:0501012166" class="btn"><i class="fas fa-phone"></i> اتصل بنا الآن</a>
-                    </div>
-                </div>
-                
-                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); flex: 1; min-width: 300px;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem; text-align: center;">أوقات العمل</h3>
-                    <div style="margin-bottom: 1rem;">
-                        <p><strong>السبت - الخميس:</strong> على مدار الاسيوع</p>
-                    </div>
-                    <div style="margin-bottom: 1rem;">
-                        <p><strong>خدمة العملاء:</strong> متاحة 24/7 للطوارئ</p>
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 2rem;">
-                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">تابعنا على</h3>
-                        <div class="social-links" style="justify-content: center;">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- الفوتر -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>عن مؤسسة فن الشرقية</h3>
-                    <p>نحن رواد في مجال تأجير معدات المناسبات في المنطقة الشرقية، نقدم خدمات متنوعة وبجودة عالية لجميع أنواع المناسبات منذ عام 2010.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>روابط سريعة</h3>
-                    <a href="#services">خدماتنا</a>
-                    <a href="#cities">المدن</a>
-                    <a href="#faq">الأسئلة الشائعة</a>
-                    <a href="#contact">اتصل بنا</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>وسائل التواصل</h3>
-                    <p>الهاتف: 0501012166</p>
-                    <p>جميع مدن المنطقة الشرقية</p>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>جميع الحقوق محفوظة © فن الشرقية 2023</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // JavaScript for FAQ functionality
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                answer.classList.toggle('active');
-                
-                const icon = question.querySelector('span:last-child');
-                icon.textContent = icon.textContent === '+' ? '-' : '+';
-            });
-        });
-    </script>
+ 
+    // Particle generator
+    (function() {
+      const container = document.getElementById('particles');
+      if (!container) return;
+      const count = 30;
+      for (let i = 0; i < count; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle';
+        p.style.left = Math.random() * 100 + '%';
+        p.style.width = p.style.height = (Math.random() * 3 + 1) + 'px';
+        p.style.animationDuration = (Math.random() * 10 + 8) + 's';
+        p.style.animationDelay = (Math.random() * 10) + 's';
+        container.appendChild(p);
+      }
+    })();
+ 
+    // Smooth nav active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--gold)' : '';
+        a.style.borderColor = a.getAttribute('href') === '#' + current ? 'var(--gold)' : 'transparent';
+        a.style.background = a.getAttribute('href') === '#' + current ? 'rgba(201,168,76,0.08)' : '';
+      });
+    }, { passive: true });
+  </script>
 </body>
 </html>
